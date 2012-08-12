@@ -1,0 +1,5 @@
+.DS_Store*
+kirby
+sandbox
+site/config/config.php
+site/panel/config/config.php

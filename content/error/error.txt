@@ -1,0 +1,9 @@
+﻿Title: Page not Found :(
+
+----
+
+Description: Error Page.
+
+----
+
+Text: Let's go (link: http://imluke.me text: home).

@@ -1,0 +1,35 @@
+Title: ACQUI-HIRING by Coyle & Polsky
+
+----
+
+Linktitle: AQUI-HIRING by Coyle & Polsky
+
+----
+
+Customlink: http://ssrn.com/abstract=2040924
+
+----
+
+Date: 2012-07-12
+
+----
+
+Description: aqui-hiring, silicon valley, paper, reading, entrepreneur
+
+----
+
+Categories: Links
+
+----
+
+text: The abstract from Coyle and Polsky's recent paper on Silicon Valley's trend towards aqui-hiring:
+
+> Google, Facebook, Zynga, and other prominent technology companies in Silicon Valley are buying start-up companies at a brisk pace. In many of these transactions, the buyer has little interest in acquiring the start-up’s projects or assets. Instead, the buyer’s primary motivation is to hire some or all of the start-up’s software engineers. These so-called “acqui-hires” represent a novel — and increasingly common — tool by which the largest and most successful technology companies in the world satisfy their intense demand for engineering talent. 
+
+> To date, the acqui-hire has attracted no attention in the academic or professional legal literature. This Article aspires to fill this gap. Drawing on interviews with Silicon Valley entrepreneurs, start-up investors, buyer representatives, and lawyers, we offer the first formal description of the acqui-hire. In so doing, we seek to enrich the understanding of those already acquainted with the acqui-hire while also providing a comprehensive account of this transaction structure to the uninitiated. 
+
+> The Article also identifies — and seeks to solve — a significant puzzle stemming from the acqui-hire phenomenon. If a large technology company wants to hire a team of software engineers, why go to all of the trouble and expense of acquiring the company that currently employs them? Why not simply hire away the individuals that it wants? We argue that the solution to the puzzle lies primarily in the way that social norms and the threat of informal sanctions shape the behavior of Silicon Valley software engineers. Although California law strongly supports the principle of employee mobility, social norms lead many engineers to pursue acqui-hires in lieu of defecting. We buttress this norms-based account with insights from prospect theory and tax law to show that the unique structure of the acqui-hire reduces its perceived and actual costs, which in turn promotes these transactions. 
+
+> The Article then considers the most significant economic issue common to all acqui-hires: how to allocate the buyer’s aggregate purchase price between the software engineers and the start-up’s outside investors. We first predict that a money-back-for-the-investors norm will eventually develop and that this norm will drive allocation determinations. We then propose several contractual innovations that could be used in an attempt to augment the investors’ allocations in acqui-hires.
+
+If you've followed the aqui-hires of startup companies like Sparrow, Sofa, and Push-Pop-Press, this paper provides a great look at the rational and motivation behind both buyer and founder.
