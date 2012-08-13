@@ -13,6 +13,12 @@
     <?php endif ?>
     
     <meta name="robots" content="index, follow" />
+    <meta name="author" content="luke chesser" />
+    <?php if($page->keywords() != ''): ?>
+    <meta name="keywords" content="<?php echo html($page->keywords()) ?>" />
+    <?php else: ?>
+    	<meta name="description" content="luke chesser, blog, projects, articles, writing, made in the north" />
+    <?php endif ?>
     
     <link rel="shortcut icon" href="<?php echo url('assets/images/favicon.png') ?>" type="image/png" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />

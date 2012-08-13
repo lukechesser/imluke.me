@@ -10,6 +10,8 @@
 	<meta name="description" content="<?php echo html($page->description()) ?>" />
 
 	<meta name="robots" content="index, follow" />
+	<meta name="author" content="luke chesser" />
+	<meta name="keywords" content="luke chesser, about, profile, canada, engineer, designer, mcgill university, developer, programmer" />
 
 	<link rel="shortcut icon" href="<?php echo url('assets/images/favicon.png') ?>" type="image/png" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
