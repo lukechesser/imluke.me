@@ -6,7 +6,7 @@
 
         <?php if(param('category')) {   /*** article overview ***/
 
-            $articles = $pages->find('blog')
+            $articles = $pages->find('madeinthenorth')
                             ->children()
                             ->visible()
                             ->filterBy('categories', param('category'), ',')
@@ -16,7 +16,7 @@
                             echo ('<h1 class="category_overview">Category Archives: <em>'), (param('category')), ('</em></h1>');
             } else {                 
 
-            $articles = $pages->find('blog')
+            $articles = $pages->find('madeinthenorth')
                             ->children()
                             ->visible()
                             ->flip()

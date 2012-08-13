@@ -1,10 +1,10 @@
 <?php 
 
-$articles = $pages->find('blog')->children()->visible()->flip()->limit(15);
+$articles = $pages->find('madeinthenorth')->children()->visible()->flip()->limit(15);
 
 snippet('feed', array(
 	'title' => 'made in the North',
-  'link'  => url('blog'),
+  'link'  => url('madeinthenorth'),
   'items' => $articles,
   'descriptionExcerpt' => false,
   'descriptionField'  => 'text'

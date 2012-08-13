@@ -1,0 +1,18 @@
+Title: imluke.me | luke chesser
+
+----
+
+Description: Hi, I'm Luke. I'm an engineer and designer from the North. I'm in my last semester of engineering at McGill University. I spend my free-time researching and developing projects to improve process of learning, challenge outdated inefficient conventions, and change the way we interact with technology.
+
+----
+
+Text: 
+# Hi, I'm Luke.
+
+## I'm an engineer and designer <span><i class="ss-icon">map</i> from the North</span>.
+
+I'm in my last semester of engineering at McGill University. I spend my free-time researching and developing projects to:
+
+- improve process of learning
+- challenge outdated, inefficient conventions
+- change the way we interact with technology

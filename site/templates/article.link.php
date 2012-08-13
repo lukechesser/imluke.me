@@ -15,7 +15,7 @@
             <footer class="post-sub">
             	            			
                 	<!-- Back to article overview -->
-    				<a href="<?php echo url('blog') ?>" class="button">← Back</a>
+    				<a href="<?php echo url('madeinthenorth') ?>" class="button">← Back</a>
 
             </footer>                   
         </article>

@@ -1,8 +1,3 @@
-<?php
-/* 
-Header Snippet for the Baseblog Kirby Theme 
-*******************************************/
-?>
 <!DOCTYPE html>
 <!--[if lte IE 8]><html class="ie"><![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> 
@@ -32,7 +27,7 @@ Header Snippet for the Baseblog Kirby Theme
     <?php echo css('assets/styles/styles.css') ?>
     
     <!-- symbolset fonts -->
-    <?php echo css('assets/webfonts/ss-standard.css') ?>
+    <?php echo css('assets/webfonts/ss-standard.css') ?> <!-- insert social -->
     
     <!-- analytics -->
     <script type="text/javascript">
