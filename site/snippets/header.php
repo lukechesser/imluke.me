@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if lte IE 8]><html class="ie"><![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> 
-<html lang="de"> <!--<![endif]-->
+<html lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
     <title><?php echo html($page->title()) ?> | <?php echo html($site->title()) ?></title>
@@ -26,8 +26,9 @@
     
     <?php echo css('assets/styles/styles.css') ?>
     
-    <!-- symbolset fonts -->
-    <?php echo css('assets/webfonts/ss-standard.css') ?> <!-- insert social -->
+	<!-- symbolset fonts -->
+	<?php echo css('assets/webfonts/ss-social.css') ?>
+	<?php echo css('assets/webfonts/ss-standard.css') ?>
     
     <!-- analytics -->
     <script type="text/javascript">

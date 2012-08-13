@@ -53,9 +53,8 @@
 		
 		<div id="social">
 			<ul>
-				<li><a href="#" title="contact me"><i class="ss-icon ss-social-circle">email</i></a></li>
-				<li><a href="#" title="view my portfolio"><i class="ss-icon ss-social-circle">behance</i></a></li>
-				<li><a href="#" title="follow me on twitter"><i class="ss-icon ss-social-circle">twitter</i></a></li>
+				<li><a href="http://be.net/projectplus" title="view my portfolio"><i class="ss-icon ss-social-circle">behance</i></a></li>
+				<li><a href="https://twitter.com/lukechesser" title="follow me on twitter"><i class="ss-icon ss-social-circle">twitter</i></a></li>
 				<li><a href="<?php echo url('madeinthenorth') ?>" title="read my blog"><i class="ss-icon ss-social-circle">tumblr</i></a></li>
 			</ul>	
 		</div> <!-- close id social -->
