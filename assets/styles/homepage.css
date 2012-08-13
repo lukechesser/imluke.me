@@ -32,6 +32,7 @@ body {
 	font-family: 'proxima-nova', sans-serif;
 	font-weight: 600;
 	padding: 0 0 50px 0;
+	background-color: fff;
 }
 
 #bg {
@@ -40,6 +41,10 @@ body {
 	top:0; 
 	left:0; 
 	max-height:100%;
+}
+
+#clipbg {
+	display:none;
 }
 
 /* Links
@@ -74,16 +79,8 @@ a:focus {
 
 #links #location span {
 	color: #ff584f;
-	
 }
 
-#links #social {
-	
-}
-
-#links #social ul {
-	
-}
 #links #social li a {
 	float: right;
 	font-size: 2.5em;
@@ -101,20 +98,20 @@ a:focus {
 
 #content {
 	position: relative;
-	width: 35%;
+	width: 500px;
 	left: 45%;
 	padding-top: 18%; /* come back to this */
 }
 
 #content h1 {
 	display: inline;
-	font-size: 3.5em;
+	font-size: 4.0em;
 	background-color: #FFFECA;
 	padding: 0 0.1em;
 }
 
 #content h2 {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	margin-top: .4em;
 }
 
@@ -123,7 +120,7 @@ a:focus {
 }
 
 #content p {
-	font-size: 1.0em;
+	font-size: 1.2em;
 	font-weight: 600;
 	margin-top: 1.0em;
 	margin-bottom: .5em;
@@ -134,22 +131,97 @@ a:focus {
 }
 
 #content ul li {
+	font-size: 1.2em;
 	margin-top: .2em;
 	margin-left: 3.0em;
 }
 
-/* for iPhones and the like */
+/* for smaller desktop computers */
 
-@media screen and (max-width: 480px) {
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+
+#content {
+	width: 40%;
+	left: 50%;
+	padding-top: 15%; /* come back to this */
+}
+
+#content h1 {
+	font-size: 2.4em;
+}
 
 }
 
-/* for iPads and the like */
+/* for mobile devices */
 
-@media only screen and (min-width: 480px) and (max-width: 1024px) {
-
+@media screen and (max-width: 800px) {
+#bg {
+	display: none;
 }
 
+#links {
+	float: none;
+	margin: 1em auto 1em auto;
+	font-weight: 800;
+}
+
+#links #location p {
+text-align: center;
+	margin: auto;
+}
+
+#links #social ul {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 114px;
+	
+}
+
+#links #social li a {
+	display: inline;
+	float: right;
+	font-size: 2.5em;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #3c3b44;
+}
+
+#content {
+	text-align: center;
+	width: 80%;
+	left: auto;
+	padding-top:0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8%;
+}
+
+#content h1 {
+	font-size: 2.9em;
+}
+
+#content ul {
+	list-style: none;
+	margin-bottom: 20%;
+}
+
+#content ul li {
+	display: block;
+	margin-top: .8em;
+	float: none;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#clipbg {
+	display: block;
+	max-width: 70%;
+	margin: 14% auto 0 auto;
+}
+
+}
  
 
 

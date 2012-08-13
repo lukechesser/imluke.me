@@ -46,7 +46,7 @@
 
 <body>
 	
-	<img src="<?php echo url('assets/images/homepage1.jpg') ?>" id="bg" />
+	
 	
 	<div id="links">
 		<div id="location">
@@ -61,6 +61,9 @@
 			</ul>	
 		</div> <!-- close id social -->
 	</div> <!-- close id links -->
+	
+	<img src="<?php echo url('assets/images/homepage1.jpg') ?>" id="bg" />
+	<img src="<?php echo url('assets/images/homepage1_clip.jpg') ?>" id="clipbg" />
 	
 	<div id="content">
 		<?php echo kirbytext($page->text()) ?>
