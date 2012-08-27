@@ -143,7 +143,7 @@ a:focus {
 #content {
 	width: 40%;
 	left: 50%;
-	padding-top: 15%; /* come back to this */
+	padding-top: 15%;
 }
 
 #content h1 {
@@ -217,10 +217,23 @@ text-align: center;
 
 #clipbg {
 	display: block;
-	max-width: 70%;
-	margin: 14% auto 0 auto;
+	max-width: 60%;
+	margin: 14% auto 0 auto !important;
 }
 
+}
+
+@media screen and (max-width: 340px) {
+	
+	#clipbg {
+			display: block;
+			width: 90%;
+			margin: 14% auto 0 auto !important;
+		}	
+
+	#content h1 {
+		font-size: 1.9em;
+	}
 }
  
 

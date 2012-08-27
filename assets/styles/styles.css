@@ -25,13 +25,14 @@ ol, ul {
 html {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    height: 101%;
+    min-height: 100%;
 }
 body {
     color: #3c3b44;
     font-family: 'ff-tisa-web-pro', serif;
     font-weight: 400;
     padding: 0 0 50px 0;
+    width: 100%;
 }
 div#site {
     margin: 0 auto;
@@ -62,6 +63,10 @@ footer#colophon a {
     text-shadow: none;
 }
 
+.hidden {
+	display: none;
+}
+
 /* Links
 -------------------------------------------------------------- */
 
@@ -87,8 +92,8 @@ header#branding h1 a {
 
 header#branding h1 a svg {
 	fill: #3c3b44;
-	width: 100px;
-	height: 100px;
+	width: 65px;
+	height:65px;
 }
 
 header#branding h1 {
@@ -96,7 +101,7 @@ header#branding h1 {
 }
 
 header#branding {
-	margin: 40px auto 20px auto;
+	margin: 40px auto 40px auto;
 }
 
 /* Articles
@@ -269,6 +274,44 @@ text-align: center;
 
 article.error a {
 border: none;
+}
+
+/* FullScreen
+-------------------------------------------------------------- */
+
+#fullscreen {
+	position: fixed;
+	color:#cfcfcf;
+	top: 5px;
+	right: 15px;
+	font-size: 1.8em;
+	width: 30px;
+	height:30px;
+}
+
+#fullscreen:hover {
+	cursor: pointer;
+	color: #ff584f;
+	text-decoration: none;
+}
+
+html:-moz-full-screen, body {
+	background: #fff;
+	width:100%;
+	padding-top: 20px;
+}
+
+*:-webkit-full-screen, body {
+	background: white;
+	width:100%;
+	height:100%;
+	padding-top: 20px;
+}
+
+html:fullscreen, body {
+	background: #fff;
+	width:100%;
+	padding-top: 20px;
 }
 
 /* Responsive
