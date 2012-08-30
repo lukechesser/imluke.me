@@ -110,7 +110,7 @@ header#branding {
 article p {
 	font-size: 1.4em;
     line-height: 1.6em;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 article ol,
@@ -119,6 +119,14 @@ article ul {
     margin: 0px 0 20px 20px;
     line-height: 25px;
 }
+
+article ul li {
+	list-style:lower-latin;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	margin: 10px 30px;
+}
+
 section.blog article {
     margin-bottom: 70px;
 }
@@ -185,6 +193,8 @@ h1.category_overview {
 section.blog article header.noBorder {
 	border: none;
 }
+
+
 
 /* Footer
 -------------------------------------------------------------- */
@@ -338,7 +348,14 @@ section.blog article {
 	font-size: 1.05em;
     line-height: 1.5em;
     margin: 1.3em 0;
-}
+	}
+
+	article ul li {
+		list-style:lower-latin;
+		font-size: 1.05em;
+		line-height: 1.5em;
+		margin: 10px 10px;
+	}
 	
 	article h1 {
 		font-size: 2.0em;

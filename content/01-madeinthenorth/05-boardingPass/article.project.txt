@@ -1,0 +1,37 @@
+Title: A useable boarding pass
+
+----
+
+Date: 2012-07-30
+
+----
+
+Description: boarding pass, redesign, usability, UX, airport, flying, traveler, experience
+
+----
+
+Categories: Links
+
+----
+
+Text: Boarding passes are notoriously badly designed. I came across (link: https://twitter.com/tyler_thompson text: Tyler Thompson)'s infamous article on (link: http://passfail.squarespace.com text: redesigning the boarding pass) (from 2008). I took my own shot at it and came up with a few (I think) interesting ideas for improving the usability.
+
+(image: 2.jpg)
+
+The main features to note are:
+
+- all of the origin information is on the left (coloured blue); all of the destination information is on the right (coloured green) - *note the natural mapping and gradient progression*
+- airport codes are provided with the full city name below for easy readability
+- a diagrammatic seating chart accompanies the seat number
+- the barcode is prominent and easy to scan (100% black on white),without distracting from the readability of the ticket
+a friendly map (dynamically generated at the time of check-in) guides the traveler through the airport
+
+(image: 3.jpg)
+
+(image: 4.jpg)
+
+(image: 5.jpg)
+
+The emphasis of the redesign is on readability and usability. **I'd like for a first time traveler to be able to walk into an airport, check-in, and make it to their gate with no problems, questions, or worries.**
+
+*Obviously, airport printers are monotone and low quality, so I decided to skip that constraint to open up the possibilities.*
