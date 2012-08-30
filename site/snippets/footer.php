@@ -14,7 +14,7 @@ Footer Snippet for the Baseblog Kirby Theme
   	</div><!-- #site -->
   	
   	<!-- extras -->
-  	<script src="<?php echo url('assets/js/extras.js') ?>"></script>
+  	<!--<script src="<?php echo url('assets/js/extras.js') ?>"></script> -->
   	
   	<!-- analytics -->
   	<script type="text/javascript">
