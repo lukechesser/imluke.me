@@ -35,7 +35,7 @@
             
             <?php elseif($article->template() == 'article.project'): /*** postformat: PROJECT ***/ ?>
             <header class="post-meta format_project">
-                <h1><a href="<?php echo $article->url() ?>">❄ <?php echo html($article->title()) ?></a></h1>
+                <h1><a href="<?php echo $article->url() ?>" ><span class="IcoWeather-1">V</span> <?php echo html($article->title()) ?></a></h1>
                 Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
             </header>
             <p><a href="<?php echo $article->url() ?>" class="excerpt"><?php echo excerpt($article->text(), 1000) ?></a></p>

@@ -77,6 +77,12 @@ footer#colophon li a:hover, footer#colophon li a:active {
 	display: none;
 }
 
+.IcoWeather-1 { 
+	font-family: IcoWeather-1;
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* Links
 -------------------------------------------------------------- */
 
@@ -144,6 +150,12 @@ section.blog article header.post-meta {
     border-bottom: 1px solid #ddd;
 }
 
+section.blog article header.post-meta a span {
+	font-size: 150%;
+	position: relative;
+	top: 12px;
+}
+
 section.blog article footer.post-sub {
     margin: 60px 0 20px 0;
 }
@@ -152,6 +164,7 @@ section.blog article footer.post-sub a {
     padding: 5px 10px;
     margin: 0 10px 0 0;
 }
+
 article h1 {
     font-size: 3.5em;
     font-weight: 800;
@@ -398,6 +411,12 @@ section.blog article {
 		padding-bottom: 20px;
   	}
   	
+  	section.blog article header.post-meta a span {
+  		font-size: 100%;
+  		position: relative;
+  		top: 0px;
+  	}
+  	
 }
 
 /* for iPads and the like */
@@ -440,5 +459,11 @@ section.blog article {
 	}
 	body {
 		padding-bottom: 30px;
+	}
+	
+	section.blog article header.post-meta a span {
+		font-size: 100%;
+		position: relative;
+		top: 0px;
 	}
 }

@@ -32,6 +32,9 @@
     
     <?php echo css('assets/styles/styles.css') ?>
     
+    <!-- ico-weather & ico-time font-->
+    <?php echo css('assets/webfonts/MyFontsWebfontsKit.css') ?>
+    
 	<!-- symbolset fonts -->
 	<?php echo css('assets/webfonts/ss-social.css') ?>
 	<?php echo css('assets/webfonts/ss-standard.css') ?>
@@ -49,5 +52,5 @@
     <div id="site">
 
         <header id="branding">
-        	<h1><a href="<?php echo url() ?>">❄</a></h1>
+        	<h1 class="IcoWeather-1"><a href="<?php echo url() ?>">V</a></h1>
         </header>
