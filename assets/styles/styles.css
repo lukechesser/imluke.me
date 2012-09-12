@@ -100,7 +100,6 @@ header#branding h1 a {
 	text-decoration: none;
 	font-size: 3.0em;
 	color: #3c3b44;
-	font-weight: bold;
 }
 
 header#branding h1 {
@@ -214,8 +213,7 @@ section.blog article header.noBorder {
 
 #colophon ul li {
 	float: left;
-	margin: auto 10px auto 10px;
-	
+	margin: auto 10px auto 10px;	
 }
 
 /* Postformats
