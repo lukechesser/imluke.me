@@ -87,16 +87,26 @@ a:focus {
 	color: #ff584f;
 }
 
-#links #social li a {
+#links #social ul li {
+	display: block;
 	float: right;
+	padding: .1em;
 	font-size: 2.5em;
-	margin-left: .2em;
+}
+
+#links #social ul li a {
 	color: #3c3b44;
 }
 
-#links #social li a:hover {
+#links #social ul li a:hover {
 	text-decoration: none;
 	color: #ff584f;
+}
+
+#links #social ul li a i {
+	position: relative;
+	font-size: 60%;
+	top: -3px;
 }
 
 /* Content

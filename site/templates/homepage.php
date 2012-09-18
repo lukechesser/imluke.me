@@ -25,6 +25,9 @@
 
 	<?php echo css('assets/styles/homepage.css') ?>
 
+	<!-- ico-weather & ico-time font-->
+	<?php echo css('assets/webfonts/MyFontsWebfontsKit.css') ?>
+
 	<!-- symbolset fonts -->
 	<?php echo css('assets/webfonts/ss-social.css') ?>
 	<?php echo css('assets/webfonts/ss-standard.css') ?>
@@ -55,9 +58,9 @@
 		
 		<div id="social">
 			<ul>
-				<li><a href="http://be.net/projectplus" title="view my portfolio"><i class="ss-icon ss-social-circle">behance</i></a></li>
-				<li><a href="https://twitter.com/lukechesser" title="follow me on twitter"><i class="ss-icon ss-social-circle">twitter</i></a></li>
-				<li><a href="<?php echo url('madeinthenorth') ?>" title="read my blog"><i class="ss-icon ss-social-circle">tumblr</i></a></li>
+				<li><a href="http://be.net/projectplus" title="view my portfolio"><i class="ss-icon ss-social">behance</i></a></li>
+				<li><a href="https://twitter.com/lukechesser" title="follow me on twitter"><i class="ss-icon ss-social">twitter</i></a></li>
+				<li><a href="<?php echo url('madeinthenorth') ?>" title="read my blog" class="IcoWeather-1">V</a></li>
 			</ul>	
 		</div> <!-- close id social -->
 	</div> <!-- close id links -->
