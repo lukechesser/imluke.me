@@ -127,16 +127,26 @@ article p {
 
 article ol,
 article ul {
-    list-style-type: disc;
     margin: 0px 0 20px 20px;
-    line-height: 25px;
+    line-height: 1.4em;
 }
 
+article ol {
+	list-style: decimal;
+}
+
+article ul {
+	list-style: disc;
+}
+
+article ol li, 
 article ul li {
-	list-style:lower-latin;
-	font-size: 1.4em;
-	line-height: 1.4em;
 	margin: 10px 30px;
+}
+
+article ol li p,
+article ul li p {
+	font-size: 1.3em;
 }
 
 section.blog article {
@@ -189,6 +199,14 @@ article blockquote {
     font-style: italic;
     border-left: 5px solid #bbb;
 }
+
+article ol.footnotes li {
+	font-size: 1.0em;
+	line-height: 1.4em;
+	padding-top: 20px;
+	color: #7d7d7d;
+}
+
 section.page h1 {
     border-bottom: 1px solid #999;
 }
@@ -369,10 +387,12 @@ section.blog article {
 	}
 
 	article ul li {
-		list-style:lower-latin;
-		font-size: 1.05em;
-		line-height: 1.5em;
 		margin: 10px 10px;
+	}
+	
+	article ol li p,
+	article ul li p {
+		font-size: 1.1em;
 	}
 	
 	article h1 {
@@ -431,6 +451,11 @@ section.blog article {
 	font-size: 1.3em;
     line-height: 1.5em;
     margin: 1.5em 0;
+	}
+	
+	article ol li p,
+	article ul li p {
+		font-size: 1.2em;
 	}
 	
 	article h1 {
