@@ -9,7 +9,7 @@ Description: Hi, I'm Luke. I'm an engineer and designer from the North. I'm in m
 Text: 
 # Hi, I'm Luke.
 
-## I'm an engineer and designer <span><i class="ss-icon">map</i> from the North</span>.
+## I'm an engineer and designer <a href="madeinthenorth/"><i class="ss-icon">map</i> from the North</a>.
 
 I'm in my last semester of engineering at McGill University. I spend my free time researching and developing projects to:
 
