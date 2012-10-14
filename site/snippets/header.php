@@ -43,12 +43,6 @@
 
 <body>
 
-	<div id="fullscreen" class="hidden">
-		
-		<p title="Toggle Fullscreen Mode"><i class="ss-icon" id="fullscreenIcon">expand</i></p>
-		
-	</div> <!-- close id fullscreen -->
-
     <div id="site">
 
         <header id="branding">
