@@ -28,7 +28,7 @@ html {
     min-height: 100%;
 }
 body {
-    color: #3c3b44;
+    color: #202023;
     font-family: 'ff-tisa-web-pro', serif;
     font-weight: 400;
     padding: 0 0 50px 0;
@@ -54,7 +54,7 @@ footer#colophon li a i {
 }
 
 footer#colophon li a {
-	color: #3c3b44;
+	color: #202023;
 }
 
 footer#colophon li a:hover, footer#colophon li a:active {
@@ -63,12 +63,12 @@ footer#colophon li a:hover, footer#colophon li a:active {
 }
 
 ::-moz-selection {
-    background: #ff584f;
+    background: #202023;
     color: #fff;
     text-shadow: none;
 }
 ::selection {
-    background: #ff584f;
+    background: #202023;
     color: #fff;
     text-shadow: none;
 }
@@ -88,15 +88,12 @@ footer#colophon li a:hover, footer#colophon li a:active {
 
 a:link,
 a:visited {
-    color: #ff584f;
-    text-decoration: none;
+    color: #202023;
+    text-decoration: underline;
 }
 a:hover,
 a:active {
-    text-decoration: underline;
-}
-a:focus {
-    background: #ddd;
+    opacity: .7;
 }
 
 /* Header
@@ -105,7 +102,7 @@ a:focus {
 header#branding h1 a {
 	text-decoration: none;
 	font-size: 3.0em;
-	color: #3c3b44;
+	color: #202023;
 }
 
 header#branding h1 {
@@ -113,7 +110,7 @@ header#branding h1 {
 }
 
 header#branding {
-	margin: 10px auto 25px auto;
+	margin: 30px auto 35px auto;
 }
 
 /* Articles
@@ -152,13 +149,6 @@ article ul li p {
 section.blog article {
     margin-bottom: 70px;
 }
-section.blog article header.post-meta {
-    color: #bbb;
-    font-size: 85%;
-    margin: 0 auto 10px auto;
-    padding: 0 0 5px 0;
-    border-bottom: 1px solid #ddd;
-}
 
 section.blog article header.post-meta a span {
 	font-size: 150%;
@@ -176,11 +166,12 @@ section.blog article footer.post-sub a {
 }
 
 article h1 {
-    font-size: 3.5em;
-    font-weight: 800;
-    font-family: 'proxima-nova', sans-serif;
+	display: inline;
+    font-size: 2.0em;
+    font-weight: 600;
     line-height: 1.3em;
-    color: #3c3b44;
+    color: #202023;
+    background-color: #FFFECA;
 }
 article h2 {
     font-size: 1.7em;
@@ -322,49 +313,11 @@ article.error a {
 border: none;
 }
 
-/* FullScreen
--------------------------------------------------------------- */
-
-#fullscreen {
-	position: fixed;
-	color:#cfcfcf;
-	top: 5px;
-	right: 15px;
-	font-size: 1.8em;
-	width: 30px;
-	height:30px;
-}
-
-#fullscreen:hover {
-	cursor: pointer;
-	color: #ff584f;
-	text-decoration: none;
-}
-
-html:-moz-full-screen, body {
-	background: #fff;
-	width:100%;
-	padding-top: 20px;
-}
-
-*:-webkit-full-screen, body {
-	background: white;
-	width:100%;
-	height:100%;
-	padding-top: 20px;
-}
-
-html:fullscreen, body {
-	background: #fff;
-	width:100%;
-	padding-top: 20px;
-}
-
 /* Responsive
 -------------------------------------------------------------- */
 
 section.blog article {
-	max-width: 770px;
+	max-width: 700px;
 	margin-left: auto !important;
 	margin-right: auto !important;
 	float: none;
