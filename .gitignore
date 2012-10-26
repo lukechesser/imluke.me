@@ -1,5 +1,5 @@
-
-*.DS_Store
-*.log
-assets/imluke\ icons/
-assets/vectors/
+.DS_Store*
+kirby
+sandbox
+site/config/config.php
+site/panel/config/config.php

@@ -1,1 +1,0 @@
-Static page files: .page, .page.conf

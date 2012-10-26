@@ -1,0 +1,425 @@
+
+/* Global CSS Reset
+-------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* HTML5 Hack for Oldtimers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+
+/* Structure
+-------------------------------------------------------------- */
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+}
+body {
+    color: #202023;
+    font-family: 'ff-tisa-web-pro', serif;
+    font-weight: 400;
+    padding: 0 0 50px 0;
+    width: 100%;
+}
+div#site {
+    margin: 0 auto;
+}
+
+footer#colophon {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.0em;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+::-moz-selection {
+    background: #202023;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #202023;
+    color: #fff;
+    text-shadow: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.IcoWeather-1 { 
+	font-family: IcoWeather-1;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Links
+-------------------------------------------------------------- */
+
+a:link,
+a:visited {
+    color: #202023;
+    text-decoration: underline;
+}
+a:hover,
+a:active {
+    opacity: .7;
+}
+
+/* Header
+-------------------------------------------------------------- */
+
+header#branding h1 a {
+	text-decoration: none;
+	font-size: 3.0em;
+	color: #202023;
+}
+
+header#branding h1 {
+	text-align: center;
+}
+
+header#branding {
+	margin: 30px auto 35px auto;
+}
+
+/* Articles
+-------------------------------------------------------------- */
+
+article p {
+	font-size: 1.4em;
+    line-height: 1.6em;
+    margin: 20px 0;
+}
+
+article ol,
+article ul {
+    margin: 0px 0 20px 20px;
+    line-height: 1.4em;
+}
+
+article ol {
+	list-style: decimal;
+}
+
+article ul {
+	list-style: disc;
+}
+
+article ol li, 
+article ul li {
+	margin: 10px 30px;
+}
+
+article ol li p,
+article ul li p {
+	font-size: 1.3em;
+}
+
+section.blog article {
+    margin-bottom: 70px;
+}
+
+section.blog article header.post-meta a span {
+	font-size: 150%;
+	position: relative;
+	top: 12px;
+}
+
+section.blog article footer.post-sub {
+    margin: 60px 0 20px 0;
+}
+section.blog article footer.post-sub a {
+	font-size: 1.5em;
+    padding: 5px 10px;
+    margin: 0 10px 0 0;
+}
+
+article h1 {
+	display: inline;
+    font-size: 2.0em;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: #202023;
+    background-color: #FFFECA;
+	margin-top: 3.0em;
+}
+article h2 {
+    font-size: 1.7em;
+    line-height: 1.6em;
+    margin: .9em 0 0 0;
+}
+article h3 {
+    font-size: 1.3em;
+    line-height: 1.9px;
+    margin: 1.7em 0 1.1em 0;
+}
+article blockquote {
+    margin: 20px;
+    padding: 0 20px;
+    float: left;
+    font-style: italic;
+    border-left: 5px solid #bbb;
+}
+
+article ol.footnotes li {
+	font-size: 1.0em;
+	line-height: 1.4em;
+	padding-top: 20px;
+	color: #7d7d7d;
+}
+
+section.page {
+    padding: 0 0 30px 0;
+}
+.read_more {
+    float: right;
+    font-size: 90%;
+}
+h1.category_overview {
+    float: left;
+    width: 100%;
+    color: #555;
+    font-size: 25px;
+    padding: 5px;
+    background: #eee;
+    margin: 0 0 50px 0;
+}
+
+section.blog article header.noBorder {
+	border: none;
+}
+
+
+
+/* Footer
+-------------------------------------------------------------- */
+
+#colophon ul {
+	list-style: none;
+}
+
+#colophon ul li {
+	text-align: center;	
+}
+
+/* Postformats
+-------------------------------------------------------------- */
+
+header.format_link h1 a:after {
+    content: " →";
+}
+
+article a.excerpt {
+	color: #3c3b44;
+	text-decoration: none;
+}
+
+/* Text
+-------------------------------------------------------------- */
+
+strong {
+	font-style: none;
+	background-color: #FFFECA;
+	padding: 0 0.1em;
+	font-weight: 400;
+}
+
+em {
+    font-style: italic;
+}
+
+/* Media
+-------------------------------------------------------------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+iframe {
+    max-width: 700px;
+}
+
+.pagination {
+margin: 10px 0 50px 0;
+height: 1.0em;
+}
+
+.button {
+	font-weight: 800;
+  	font-size: 1.1em;
+  	padding: 5px 0px 5px 0px;
+}
+
+.left {
+float: left;
+}
+
+.right {
+float: right;
+}
+
+/* Error Page
+-------------------------------------------------------------- */
+
+article.error h1 {
+text-align: center;
+border: none;
+}
+
+article.error p {
+text-align: center;
+}
+
+article.error a {
+border: none;
+}
+
+/* Responsive
+-------------------------------------------------------------- */
+
+section.blog article {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+/* for iPhones and the like */
+
+@media screen and (max-width: 540px) {
+  
+  section.blog article {
+  	padding-left: 1.5em;
+  	padding-right: 1.5em;
+  	margin-bottom: 3.2em;
+  }
+  
+  article p {
+	font-size: 1.05em;
+    line-height: 1.5em;
+    margin: 1.3em 0;
+	}
+
+	article ul li {
+		margin: 10px 10px;
+	}
+	
+	article ol li p,
+	article ul li p {
+		font-size: 1.1em;
+	}
+	
+	article h1 {
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+	
+	article h2 {
+		font-size: 1.2em;
+	}
+	
+	article h3 {
+		font-size: 1.1em;
+	}
+	
+	section.blog article footer.post-sub a {
+		font-size: 1.2em;
+	}
+	
+	article blockquote {
+		margin: 1.0em 0 1.0em 0;
+	}
+	
+  	header#branding h1 a {
+  		font-size: 1.8em;
+  	}
+  	
+  	footer#colophon ul {
+	  	width: 200px;
+  	}
+  	#colophon ul li {
+  		float: none;
+  		margin: 5px auto 5px auto;
+  	}
+  	body {
+		padding-bottom: 20px;
+  	}
+  	
+  	section.blog article header.post-meta a span {
+  		font-size: 100%;
+  		position: relative;
+  		top: 0px;
+  	}
+  	
+}
+
+/* for iPads and the like */
+
+@media only screen and (min-width: 540px) and (max-width: 1024px) {
+	section.blog article {
+  	padding-left: 3.0em;
+  	padding-right: 3.0em;
+  	margin-bottom: 3.5em;
+  }
+  article p {
+	font-size: 1.3em;
+    line-height: 1.5em;
+    margin: 1.5em 0;
+	}
+	
+	article ol li p,
+	article ul li p {
+		font-size: 1.2em;
+	}
+	
+	article h1 {
+		font-size: 1.7em;
+		line-height: 1.4em;
+	}
+	
+	article h2 {
+		font-size: 1.6em;
+	}
+	
+	article h3 {
+		font-size: 1.4em;
+	}
+	
+	section.blog article footer.post-sub a {
+		font-size: 1.4em;
+	}
+	
+	article blockquote {
+		margin: 1.0em 0 2.0em 0;
+	}
+	
+	header#branding h1 a {
+		font-size: 2.5em;
+	}
+	body {
+		padding-bottom: 30px;
+	}
+	
+	section.blog article header.post-meta a span {
+		font-size: 100%;
+		position: relative;
+		top: 0px;
+	}
+}

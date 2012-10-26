@@ -1,9 +1,0 @@
-{
-  "name": "Sidetap",
-  "version": "0.0.0",
-  "commit": "ddc2e33918507056e34c431bfb3a8abd3ca8beee",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/harvesthq/Sidetap.git"
-  }
-}
