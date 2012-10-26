@@ -5,16 +5,11 @@ Footer Snippet for the Baseblog Kirby Theme
 ?>
 		<footer id="colophon">
     		<ul>
-	    		<li><a href="<?php echo url('feed') ?>"><i class="ss-icon">rss</i> get the RSS feed</a></li>
-	    		<li>© made in the North</li>
-		    	<li><a href="http://www.getkirby.com"><i class="ss-icon">cloud</i> running on Kirby</a></li>
+		    	<li><i><a href="http://www.getkirby.com">powered by Kirby</a></i></li>
 		    </ul>
   		</footer>
 
   	</div><!-- #site -->
-  	
-  	<!-- extras -->
-  	<!--<script src="<?php echo url('assets/js/extras.js') ?>"></script> -->
   	
   	<!-- analytics -->
   	<script type="text/javascript">

@@ -46,5 +46,5 @@
     <div id="site">
 
         <header id="branding">
-        	<h1 class="IcoWeather-1"><a href="http://www.imluke.me/madeinthenorth/">V</a></h1>
+        	<h1 class="IcoWeather-1"><a href="<?php echo url('madeinthenorth') ?>">V</a></h1>
         </header>
