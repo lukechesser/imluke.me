@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sidetap HTML Skeleton</title>
+
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link type="text/css" rel="stylesheet" media="screen" href="sidetap.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="theme/default/default.css" />
+  </head>
+  <body>
+    <div class="sidetap">
+      <div class="stp-nav">
+        <div>
+          <nav>
+            <a href="#" class="selected">Selected Nav Item</a>
+            <a href="#">Second Nav Item</a>
+            <a href="#">Third Nav Item</a>
+            <a href="#">Fourth Nav Item</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="stp-content" id="content">
+        <header class="stp-fake-header">&nbsp;</header>
+        <div class="stp-overlay nav-toggle">&nbsp;</div>
+
+        <!-- Content Divs Look Like This -->
+        <div class="stp-content-panel">
+          <header>
+            <a href="javascript:void(0)" class="header-button icon menu"><span>Menu</span></a>
+            <h1>Header Text</h1>
+          </header>
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div>
+                Content goes here.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End content Div -->
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../lib/jquery.1.7.2.js"></script>
+    <script type="text/javascript" src="sidetap.js"></script>
+    <script>
+      var st = sidetap();
+      $(".header-button.menu").on("click",st.toggle_nav)
+    </script>
+  </body>
+</html>

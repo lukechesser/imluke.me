@@ -1,0 +1,274 @@
+@nav_width: 272px;
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #E8E8E8;
+}
+
+.sidetap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.stp-nav {
+  background: black;
+  color: white;
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: @nav_width;
+  z-index: 5;
+}
+
+.stp-content {
+  background: white;
+  margin-left: 0;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.stp-overlay {
+  background: blue;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: .0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.stp-content-body > * > *:first-child {
+  margin-top: 0;
+}
+.stp-content-body > * > *:last-child {
+  margin-bottom: 0;
+}
+
+.sidetap.nav-showing .stp-content {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow:         0px 0px 15px rgba(0,0,0,0.9);
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.9);
+  -moz-box-shadow:    0px 0px 15px rgba(0,0,0,0.9);
+}
+.sidetap.nav-showing .stp-overlay {
+  display: block;
+  z-index: 100;
+}
+
+.stp-content-panel, .stp-nav-panel {
+  position: relative;
+  height: 100%;
+}
+.stp-content-panel {
+  background: white;
+}
+.stp-content-panel.hidden {
+  display: none;
+}
+
+.stp-fake-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.ios .sidetap {
+  overflow-x: hidden;
+}
+.ios .stp-content-panel, .ios .stp-nav-panel {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ios .stp-content-panel.hidden {
+  display: block;
+  left: -9999px;
+}
+
+.ios .stp-content-frame {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.ios .stp-content-body {
+  -webkit-transform: translateZ(0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.ios .nav-showing .stp-content .stp-content-body {
+  overflow: hidden;
+}
+
+/*
+  Show Navigation Animation
+*/
+.showing-nav {
+  -webkit-transform: translateX(@nav_width);
+  -moz-transform:    translateX(@nav_width);
+  -webkit-animation-name: slidefornav;
+  -moz-animation-name:    slidefornav;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function:    ease-out;
+  animation-timing-function:         ease-out;
+  -webkit-animation-duration: 175ms;
+  -moz-animation-duration:    175ms;
+  animation-duration:         175ms;
+}
+
+@-webkit-keyframes slidefornav {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(@nav_width);
+  }
+}
+@-moz-keyframes slidefornav {
+  from {
+    -moz-transform: translateX(0);
+  }
+  to {
+    -moz-transform: translateX(@nav_width);
+  }
+}
+
+/*
+  Hide Navigation Animation
+*/
+.hide-nav {
+  -webkit-transform: translateX(0);
+  -moz-transform:    translateX(0);
+  -webkit-animation-name: slideovernav;
+  -moz-animation-name:    slideovernav;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function:    ease-out;
+  animation-timing-function:         ease-out;
+  -webkit-animation-duration: 175ms;
+  -moz-animation-duration:    175ms;
+  animation-duration:         175ms;
+}
+
+@-webkit-keyframes slideovernav {
+  from {
+    -webkit-transform: translateX(@nav_width);
+  }
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes slideovernav {
+  from {
+    -moz-transform: translateX(@nav_width);
+  }
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+
+
+/* Slide up or Down animation */
+.up-from-bottom {
+  -webkit-transform: translateY(0);
+  -moz-transform:    translateY(0);
+  -webkit-animation-name: upfrombottom;
+  -moz-animation-name:    upfrombottom;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function:    ease-out;
+  -webkit-animation-duration: 250ms;
+  -moz-animation-duration:    250ms;
+  z-index: 5;
+}
+.down-to-bottom {
+  -webkit-transform: translateY(100%);
+  -moz-transform:    translateY(100%);
+  -webkit-animation-name: downtobottom;
+  -moz-animation-name:    downtobottom;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function:    ease-out;
+  -webkit-animation-duration: 250ms;
+  -moz-animation-duration:    250ms;
+  z-index: 5;
+}
+
+@-webkit-keyframes upfrombottom {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+@-webkit-keyframes downtobottom {
+  from {
+    -webkit-transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(100%);
+  }
+}
+
+/*
+  Sliding animations
+*/
+.slide-out-to-left {
+  -webkit-transform: translateX(-100%);
+  -webkit-animation-name: slideouttoleft;
+}
+
+.slide-in-from-right {
+  -webkit-transform: translateX(0);
+  -webkit-animation-name: slideinfromright;
+}
+
+.slide-out-to-right {
+  -webkit-transform: translateX(100%);
+  -webkit-animation-name: slideouttoright;
+}
+
+.slide-in-from-left {
+  -webkit-transform: translateX(0);
+  -webkit-animation-name: slideinfromleft;
+}
+.slide-in-from-left, .slide-out-to-right, .slide-in-from-right, .slide-out-to-left {
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 200ms;
+}
+@-webkit-keyframes slideinfromright {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(0); }
+}
+
+@-webkit-keyframes slideinfromleft {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(0); }
+}
+
+@-webkit-keyframes slideouttoleft {
+    from { -webkit-transform: translateX(0); }
+    to { -webkit-transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slideouttoright {
+    from { -webkit-transform: translateX(0); }
+    to { -webkit-transform: translateX(100%); }
+}

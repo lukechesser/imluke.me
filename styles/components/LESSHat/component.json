@@ -1,0 +1,9 @@
+{
+  "name": "LESSHat",
+  "version": "0.0.0",
+  "commit": "5f4f671a9175646dea6c733b4cd617058bfed3c3",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CSSHat/LESSHat.git"
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Stonehenge</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link type="text/css" rel="stylesheet" media="screen" href="../../src/sidetap.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="../../src/theme/default/default.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="assets/css/stonehenge.css" />
+  </head>
+  <body>
+    <div class="sidetap">
+
+      <!-- Navigation -->
+      <div class="stp-nav">
+        <nav>
+          <a href="#" class="selected">On Stage</a>
+          <a href="#">Goes to 11</a>
+          <a href="#">Drum Sets</a>
+          <a href="#">Guitars</a>
+        </nav>
+      </div>
+
+      <div class="stp-content" id="content">
+        <header class="stp-fake-header">&nbsp;</header>
+        <div class="stp-overlay nav-toggle">&nbsp;</div>
+
+        <!-- Gallery -->
+        <div class="stp-content-panel" id="gallery">
+          <header>
+            <a href="javascript:void(0)" class="header-button icon menu"><span>Menu</span></a>
+            <a href="javascript:void(0)" class="header-button icon info right"><span>Info</span></a>
+            <h1></h1>
+          </header>
+
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div class="container">
+                <ul class="thumbnails"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail page -->
+        <div class="stp-content-panel hidden" id="detail">
+          <header>
+            <a href="javascript:void(0)" class="header-button back">Back</a>
+          </header>
+
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div class="container">
+                <figure>
+                  <img src="" alt="" />
+                  <figcaption>
+                    <cite></cite>
+                    <address class="author">by <a href="#" rel="author"></a></address>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About page -->
+        <div class="stp-content-panel hidden" id="about">
+          <header>
+            <a href="javascript:void(0)" class="header-button cancel right">Done</a>
+            <h1>What's This?</h1>
+          </header>
+
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div class="container">
+                This is (a demo of)
+                <img src="../../docs/sidetap-logo.png" alt="Sidetap Demo" class="sidetap-logo" />
+                <a href="http://sidetap.it/" class="button">Click here for more info</a>
+                <small>Built by <a href="http://www.getharvest.com">Harvest</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../../lib/jquery.1.7.2.js"></script>
+    <script type="text/javascript" src="../../src/sidetap.js"></script>
+    <script type="text/javascript" src="../../lib/harvey.js"></script>
+
+    <script type="text/javascript" src="assets/js/images.js"></script>
+    <script type="text/javascript" src="assets/js/stonehenge.js"></script>
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-103886-25']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>

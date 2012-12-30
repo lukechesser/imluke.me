@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>This is Sidetap - a mobile framework.</title>
+
+  <meta name="author" content="">
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="Shortcut Icon" type="image/x-icon" href="docs/favicon.png" />
+  <link type="text/css" rel="stylesheet" media="screen" href="docs/style.css" />
+
+</head>
+<body>
+
+  <div role="main" id="main">
+    <div id="demo">
+      <p class="built-by-harvest">
+        Built by <a href="http://www.getharvest.com">Harvest</a>
+      </p>
+    </div>
+
+    <div id="content">
+      <div id="opening">
+        <header>
+          <h1>This is Sidetap</h1>
+          <p class="intro">Sidetap is a simple framework that allows you to quickly build platform-independent mobile web interfaces.</p>
+
+          <div id="sidetap-support-warning">
+            <b>Sidetap was not optimized for your browser:</b>
+            Though Sidetap works on many devices and browsers, it delivers the best experience to iOS5+, Chrome &amp; Safari. Check them out to get the true Sidetap experience.&trade;
+          </div>
+        </header>
+
+        <div class="sidetap-mobile-link">
+          <a href="demo/stonehenge/index.html" class="button">Check Out the Demo</a>
+        </div>
+
+        <h2>Ugh, another mobile framework?</h2>
+
+        <p>We built Sidetap to be an easy-to-use implementation of the side navigation pattern popularized by apps like Sparrow and Facebook. It solves many common mobile development problems right out of the box. Here are some of the specific things we like about it:</p>
+
+        <dl id="sidetap_facts">
+          <dt>Lightweight</dt>
+          <dd>Sidetap only weighs 2k when minifyied and gzipped!</dd>
+
+          <dt>Device Support</dt>
+          <dd>Sidetap aims to always deliver the best possible experience for all devices by starting with a basic experience and progressively enhancing it for more capable devices.</dd>
+
+          <dt>Less Decisions to Make</dt>
+          <dd>By embracing convention over configuration, Sidetap lets you start building your mobile interfaces right away.</dd>
+
+          <dt>Simple</dt>
+          <dd>Sidetap provides a flexible foundation for navigating between content panels on mobile devices using an easy-to-use syntax.</dd>
+        </dl>
+      </div>
+
+      <h2>How to Use Sidetap</h2>
+      
+      <ol>
+        <li>
+          <h3>Build the HTML Structure</h3>
+          <p>Sidetap uses a very specific HTML structure which can be found in the <a href="https://github.com/harvesthq/Sidetap/blob/master/src/skeleton.html">skeleton.html</a> file</p>
+        </li>
+
+        <li>
+          <h3>Instantiate Sidetap</h3>
+          <p>Create a reference to Sidetap from within your app.</p>
+
+          <code>var my_sidetap = new sidetap();</code>
+        </li>
+
+        <li>
+          <h3>Call Animations</h3>
+          <p>Any time you want to show a new section, you just tell Sidetap which content element to animate. Sidetap will take care of clearing the stage using whatever animation is appropriate for the situation.</p>
+
+          <code>my_sidetap.show_section(element, options);</code>
+
+          <h3>show_section options:</h3>
+          <ul>
+            <li>callback: a function to fire when the switch is complete</li>
+            <li>animation: an animation style to use (iOS 5+ only). Current animations are upfrombottom, downfromtop, infromright, infromleft</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Dependency</h2>
+
+      <p>Requires jQuery (only tested with 1.7.2) or Zepto.js.</p>
+
+      <h2>Development Roadmap</h2>
+
+      <p>As with any software project, there&rsquo;s always room for improvement. These are some of the things we&rsquo;d like to get added to Sidetap in the future.</p>
+
+      <ul>
+        <li>More iOS-like header animations</li>
+        <li>Better touch support</li>
+        <li>Leaving side navigation open on larger screen devices (hello, iPad)</li>
+        <li>Bringing polished version to more devices.</li>
+      </ul>
+
+
+      <h2>Where can I get it</h2>
+
+      <p><a href="https://github.com/harvesthq/sidetap">On Github, of course.</a></p>
+
+      <h2>Credits</h2>
+
+      <ul>
+        <li>Sidetap was built for <a href="http://www.getharvest.com/">Harvest</a></li>
+        <li>Concept and development by <a href="http://twitter.com/pfiller">Patrick Filler</a></li>
+        <li>Primary design and theme was done by <a href="http://twitter.com/mlettini">Matthew Lettini</a></li>
+        <li>Awesome Sidetap logo and docs designed by <a href="http://twitter.com/stickyfish">Kim Ku</a></li>
+        <li>Demo app and other contributions by <a href="http://twitter.com/jkintscher">Joschka Kintscher</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="lib/harvey.js"></script>
+  <script type="text/javascript">
+    // rendering engine compatibility check
+    if(window.SharedWorker && navigator.userAgent.match(/^((?!android).)*webkit.*$/i))
+    {
+      var warning = document.getElementById('sidetap-support-warning');
+      warning.className += ' hidden';
+    }
+
+    // load the demo only when there is enough space
+    Harvey.attach('screen and (min-width:700px)', {
+      setup: function(){
+        var demo = document.getElementById('demo');
+        if(navigator.userAgent.match(/ipad/i)){
+          demo.innerHTML = '<div id="ipad_demo"><div></div><a class="button" href="http://sidetap.it/demo/stonehenge/">Check Out the Demo</a></div>' + demo.innerHTML;
+        }
+        else{
+          demo.innerHTML = '<iframe src="demo/stonehenge/index.html" width="320" height="482" frameborder="0"></iframe>' + demo.innerHTML;
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-103886-25']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  <div class="oss-bar">
+    <ul>
+      <li><a class="fork" href="https://github.com/harvesthq/sidetap">Fork on Github</a></li>
+      <li><a class="harvest" href="http://www.getharvest.com/">Built by Harvest</a></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* Stonehenge Content */
+
+.loading {
+  height: 3em;
+  background: url('../img/ajax-loader.gif') no-repeat center center;
+}
+#detail figure.loading img, #detail figure.loading figcaption {
+  display: none;
+}
+
+.container {
+  padding: 44px 0 0;
+}
+#about .container {
+  text-align: center;
+  padding: 84px 10px 10px;
+}
+
+.thumbnails {
+  overflow: auto;
+  padding-top: 1.5%;
+}
+.thumbnails li {
+  float: left;
+  width: 23.5%;
+  margin: 0 0 1.5% 1.5%;
+  line-height: 0;
+}
+.thumbnails li img {
+  display: block;
+  width: 100%;
+}
+.thumbnails.loading li {
+  display: none
+}
+
+#detail img {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+#detail figcaption {
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
+}
+#detail cite {
+  font-style: normal;
+  font-weight: bold;
+}
+#detail address {
+  font-size: 12px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.sidetap-logo {
+  display: block;
+  margin: 0px auto;
+  padding: 20px 0;
+  width: 80%;
+}
+small {
+  display: block;
+  font-size: 12px;
+  padding: 30px 0;
+}
