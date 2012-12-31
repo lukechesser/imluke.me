@@ -2,18 +2,13 @@
 
 ## Description
 
-Custom build for my personal site and blog, [imluke.me](http://imluke.me/), using [Bastian Allgeier's](https://github.com/bastianallgeier) file-based CMS [Kirby](http://getkirby.com). The blog's backend is built off of [Sascha Lack's](https://github.com/sashtown) [Baseblog Kirby Theme](https://github.com/sashtown/Baseblog-Kirby-Theme) template.
+Source code for my personal site, [imluke.me](http://imluke.me/), using [Squarespace](http://squarespace.com). The old code used [Kirby](http://getkirby.com/) for the backend — the code and template for that is somewhere in the past commits.
 
 ## Details
 
-This repo contains all of the content files (articles, links, projects) and stylesheets required to alter the basic Kirby setup. Specifically, the stylesheets are:
+This repo contains all of the content (articles, links, projects) components, and stylesheets that I use on imluke.me.
 
-- responsive
-- retina-ready (SVG, vector and text-based assets)
-
-Fonts are served by Typekit. Icon files are contained in SVG or text-based files in the assets folder.
-
-The license and config files have been removed for security and copyright reasons. To obtain your own license, go to the [Kirby CMS homepage](http://getkirby.com).
+Fonts are served by Typekit. Icons are contained in SVG or text-based files in the assets folder.
 
 ## Contact
 
