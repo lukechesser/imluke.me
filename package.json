@@ -1,0 +1,19 @@
+{
+  "name": "imluke.me",
+  "version": "0.0.0",
+  "description": "Personal blog of Luke Chesser",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukechesser/imluke.me.git"
+  },
+  "author": "Luke Chesser",
+  "license": "BSD"
+}
