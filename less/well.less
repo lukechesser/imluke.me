@@ -1,0 +1,55 @@
+.well {
+	margin-top: 40px;
+	width: 100%;
+	background-color: @white;
+	border-bottom: 2px solid @gray80;
+}
+
+.inner-well {
+	padding: 20px 40px;
+	min-height: 30px;
+}
+
+.well .show-on-hover {
+	opacity: 0;
+	.transition(~"opacity .75s ease-in-out");
+}
+
+.well:hover .show-on-hover {
+	opacity: 1;
+}
+
+.actions {
+
+	margin-left: 0;
+	list-style: none;
+	margin-top: 0;
+	
+	li {
+		float: left;
+		margin-left: 10px;
+		opacity: .5;
+
+		&:hover {
+			opacity: .7;
+		}
+
+		img {
+			padding-top: 2px;
+			padding-bottom: 2px;
+			height: 24px;
+		}
+	}	
+}
+
+.image {
+	margin-top: 40px;
+	width: 100%;
+	height: auto;
+	background-color: @white;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>imluke | home</title>
+	<link rel="stylesheet" type="text/css" href="css/v7.css">
+
+	<meta name="viewport" content="width=device-width">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://static.tumblr.com/kqxmsd2/slzmlgwea/imluke-72_2x.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://static.tumblr.com/kqxmsd2/A4kmlgwfg/imluke_2x.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://static.tumblr.com/kqxmsd2/gUxmlgwds/imluke-72.png.png">
+  <link rel="apple-touch-icon-precomposed" href="http://static.tumblr.com/kqxmsd2/xbJmlgwey/imluke.png">
+  
+  <link rel="shortcut icon" href="http://static.tumblr.com/kqxmsd2/NRymlgwca/favicon.png"/>
+  <link rel="shortcut icon" href="http://static.tumblr.com/kqxmsd2/My3mlgw9o/favicon.ico"/>
+  <link rel="alternate" type="application/rss+xml" name="RSS" href="{RSS}"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script>
+		jQuery(function($){
+			var imluke;
+			
+			imluke = {
+				cache: {
+					$snowflakeLink: $('.brand').parent(),
+					$snowflakeText: $('.brand').next('h1'),
+					$wobbleLinks: $('.js-wobble')
+				},
+
+				ready: function() {
+					this.initializeListeners();
+				},
+
+				initializeListeners: function() {
+					var c = imluke.cache;
+					imluke.createAnimationOnHover.call(c.$snowflakeLink, "slideIn", c.$snowflakeText, true);
+					c.$wobbleLinks.each(function(index){
+						imluke.createAnimationOnHover.call(this, "wobble");
+					});
+				},
+
+				createAnimationOnHover: function(animationClass, $objectToAnimate, objectIsHidden) {
+					var $this = $(this);
+					if (!$objectToAnimate) {
+						$objectToAnimate = $this;
+					}
+					$objectToAnimate.addClass("animated");
+					$this.on("mouseenter", function() {
+						if (objectIsHidden) {
+							$objectToAnimate.show();
+						}
+						$objectToAnimate.addClass(animationClass);
+					});
+					$this.on("mouseleave", function() {
+						$objectToAnimate.removeClass(animationClass);
+						if (objectIsHidden) {
+							$objectToAnimate.fadeOut();
+						}
+					});
+				}
+			}
+			imluke.ready();
+		});
+	</script>
+</head>
+<body>
+	<header class="bar">
+		<div class="container clearfix">
+			<nav class="pull-left" style="width: 200px;">
+				<a href="/" style="width: 120px; height: 30px; display: block;">
+					<img src="img/Snowflake.svg" class="brand" alt="Home">
+					<h1 style="display: none;">imluke</h1>
+				</a>
+			</nav>
+			<nav class="pull-right social-links">
+				<ul>
+					<li><a href="http://github.com/lukechesser" title="Code on GitHub"><img src="img/Github.svg" alt="GitHub Icon" class="js-wobble"></a></li>
+					<li><a href="http://dribbble.com/lukechesser" title="Designs on Dribbble"><img src="img/Dribbble.svg" alt="Dribbble Icon" class="js-wobble"></a></li>
+					<li><a href="http://twitter.com/lukechesser" title="Short thoughts on Twitter"><img src="img/Twitter.svg" alt="Twitter Icon" class="js-wobble"></a></li>
+				</ul>
+			</nav>
+		</div> <!-- close .container -->
+	</header> <!-- close .bar -->
+
+	<div class="container" style="margin-top: 115px;">
+		<section class="well">
+			<div class="inner-well">
+				<div class="well-header clearfix">
+					<div class="pull-left">
+						<h6>2 days</h6>
+					</div>
+					<div class="pull-right">
+						<ul class="actions">
+							<li><a href="{Permalink}"><img src="http://static.tumblr.com/kqxmsd2/OWymlh1le/link.svg" alt="Permalink Icon"></a></li>
+							<!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/lKimkum8u/heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li> -->
+							<!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/hhimkum9j/share.svg" alt="Share Icon"></a></li> -->
+						</ul>
+					</div>
+				</div> <!-- close .well-header -->
+				<article>
+					<p>Some people speculate that Steve Jobs was talking about a Siri-powered interface here. He's not. As unexciting as it may be to some tech writers, he's talking about a touch interface.</p>
+					
+					<ul>
+						<li>Some point about something</li>
+						<li>Some other point about something else that goes here. Some other point about something else that goes here.</li>
+					</ul>
+
+					<blockquote cite="#">
+						<p>Some people speculate that Steve Jobs was talking about a Siri-powered interface here. He's not. As unexciting as it may be to some tech writers, he's talking about a touch interface.</p>
+
+						<p>I don't pretend to know Apple's plans, nor would I dare to take an accurate guess at how they'll build their interface, but I do know one thing: the main interface will be controlled by a touch-device. Whether it's a cheap iPad Mini that ships with the TV itself, or whether it leverages the ubiquity of existing Apple touch devices like the iPad and iPhone, I know that any successful venture into the TV market by Apple will surely have 1) a drop-dead gorgeous display, 2) revolutionary software, and 3) a touch-device to control the TV.</p>
+
+						<p><a href="#"><cite>http://wired.com/article/189/the-first-of-their-kind</cite></a></p>
+					</blockquote>
+				</article>
+			</div> <!-- close .inner-well -->
+		</section> <!-- close .well -->
+
+		<section class="image">
+			<img src="img/ripcurl.jpg">
+		</section>
+
+		<section class="well">
+			<div class="inner-well">
+				<div class="well-header clearfix">
+					<div class="pull-left">
+						<h6>2 days</h6>
+					</div>
+					<div class="pull-right">
+						<ul class="actions">
+							<li><a href="#"><img src="img/Heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li>
+							<li><a href="#"><img src="img/Share.svg" alt="Share Icon"></a></li>
+						</ul>
+					</div>
+				</div> <!-- close .well-header -->
+				<article>
+					<p>Some people speculate that Steve Jobs was talking about a Siri-powered interface here. He's not. As unexciting as it may be to some tech writers, he's talking about a touch interface.</p>
+
+					<p>I don't pretend to know Apple's plans, nor would I dare to take an accurate guess at how they'll build their interface, but I do know one thing: the main interface will be controlled by a touch-device. Whether it's a cheap iPad Mini that ships with the TV itself, or whether it leverages the ubiquity of existing Apple touch devices like the iPad and iPhone, I know that any successful venture into the TV market by Apple will surely have 1) a drop-dead gorgeous display, 2) revolutionary software, and 3) a touch-device to control the TV.</p>
+				</article>
+			</div> <!-- close .inner-well -->
+		</section> <!-- close .well -->
+	</div> <!-- close .container -->
+
+	<footer class="about">
+		<div class="container clearfix">
+			<div class="picture">
+				<img src="img/LukeChesser@2x.png" alt="Luke Chesser" width="157px" height="157px">
+			</div> <!-- close .pull-left -->
+			<div class="bio">
+				<h3>Hi, I'm Luke.</h3>
+				<h3>I design and build products <a href="http://www.ooomf.com/" target="_blank">@ooomf</a> in Montreal, Canada. I'm interested in education, conventions, and the process of learning.</h3>
+			</div> <!-- close .pull-right -->
+		</div> <!-- close .container -->
+	</footer>
+</body>
+</html>
