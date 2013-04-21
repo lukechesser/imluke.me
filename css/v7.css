@@ -312,10 +312,34 @@ body {
   width: 640px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+.container.first {
+  margin-top: 140px;
+}
+@media only screen and (max-width: 767px) {
+  .container.first {
+    margin-top: 85px;
+  }
+}
 p {
   font-size: 16px;
   font-weight: 600;
   line-height: 2.0em;
+}
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 14px;
+    line-height: 1.6em;
+  }
 }
 a {
   color: #2ba2d9;
@@ -331,34 +355,69 @@ h6 {
   padding: 0;
   margin-top: 10px;
 }
+@media only screen and (max-width: 767px) {
+  h6 {
+    font-size: 14px;
+  }
+}
 blockquote {
   font-style: italic;
   border-left: 4px solid #e7e7e7;
   font-weight: 600;
   line-height: 2.0em;
-  margin-left: 0;
   padding-left: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 40px;
+}
+@media only screen and (max-width: 767px) {
+  blockquote {
+    line-height: 1.6em;
+    padding-left: 15px;
+    margin-right: 0px;
+  }
 }
 ul {
   margin-top: 10px;
   font-weight: 600;
   margin-left: 20px;
+  padding-left: 40px;
+}
+@media only screen and (max-width: 767px) {
+  ul {
+    margin-left: 5px;
+    padding-left: 15px;
+  }
 }
 ul li {
   margin-bottom: 10px;
   line-height: 1.8em;
 }
+@media only screen and (max-width: 767px) {
+  ul li {
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+}
 .well {
   margin-top: 40px;
-  width: 100%;
   background-color: #ffffff;
   border-bottom: 2px solid #c9c9c9;
+}
+@media only screen and (max-width: 767px) {
+  .well {
+    margin-top: 15px;
+  }
 }
 .inner-well {
   padding: 20px 40px;
   min-height: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .inner-well {
+    padding: 15px;
+  }
 }
 .well .show-on-hover {
   opacity: 0;
@@ -395,9 +454,22 @@ ul li {
   height: auto;
   background-color: #ffffff;
 }
+@media only screen and (max-width: 767px) {
+  .image {
+    margin-top: 15px;
+  }
+}
 .image img {
   width: 100%;
   height: auto;
+}
+.snowflake-container {
+  width: 200px;
+}
+@media only screen and (max-width: 767px) {
+  .snowflake-container {
+    width: 50px;
+  }
 }
 .bar {
   position: fixed;
@@ -448,13 +520,43 @@ ul li {
   display: block;
   width: 157px;
   height: 157px;
+  text-align: left;
+}
+.picture img {
+  width: 157px;
+  height: 157px;
+}
+@media only screen and (max-width: 767px) {
+  .picture img {
+    width: 140px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .picture {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 .bio {
   display: block;
   float: left;
   width: 250px;
-  margin-left: 50px;
-  margin-top: 20px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-right: 0;
+  text-align: left;
+}
+@media only screen and (max-width: 767px) {
+  .bio {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+  }
 }
 .bio h3 {
   font-size: 14px;

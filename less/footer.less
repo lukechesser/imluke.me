@@ -11,14 +11,42 @@
 	display: block;
 	width: 157px;
 	height: 157px;
+	text-align: left;
+
+	img {
+		width: 157px;
+		height: 157px;
+		
+		@media only screen and (max-width: 767px) {
+			width: 140px;
+			height: auto;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
 }
 
 .bio {
 	display: block;
 	float: left;
 	width: 250px;
-	margin-left: 50px;
-	margin-top: 20px;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-right: 0;
+	text-align: left;
+
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 40px;
+		padding-right: 40px;
+		text-align: center;
+	}
 
 	h3 {
 		font-size: 14px;

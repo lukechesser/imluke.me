@@ -1,13 +1,19 @@
 .well {
 	margin-top: 40px;
-	width: 100%;
 	background-color: @white;
 	border-bottom: 2px solid @gray80;
+	@media only screen and (max-width: 767px) {
+		margin-top: 15px;
+	}
 }
 
 .inner-well {
 	padding: 20px 40px;
 	min-height: 30px;
+
+	@media only screen and (max-width: 767px) {
+		padding: 15px;
+	}
 }
 
 .well .show-on-hover {
@@ -48,8 +54,20 @@
 	height: auto;
 	background-color: @white;
 
+	@media only screen and (max-width: 767px) {
+		margin-top: 15px;
+	}
+
 	img {
 		width: 100%;
 		height: auto;
+	}
+}
+
+.snowflake-container {
+	width: 200px;
+
+	@media only screen and (max-width: 767px) {
+	width: 50px;
 	}
 }
