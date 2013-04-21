@@ -2,7 +2,7 @@
 
 ## Description
 
-Build for my personal site and blog, [imluke.me](http://imluke.me/), using Express and hosted on Heroku.
+Theme and assets for my personal blog on Tumblr.
 
 ## Contact
 
