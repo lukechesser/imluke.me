@@ -334,10 +334,34 @@
       width: 640px;
       margin: 0 auto;
     }
+    @media only screen and (max-width: 767px) {
+      .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    }
+    body > .container:first-of-type {
+      margin-top: 120px;
+    }
+    @media only screen and (max-width: 767px) {
+      body > .container:first-of-type {
+        margin-top: 85px;
+      }
+    }
     p {
       font-size: 16px;
       font-weight: 600;
       line-height: 2.0em;
+    }
+    @media only screen and (max-width: 767px) {
+      p {
+        font-size: 14px;
+        line-height: 1.6em;
+      }
     }
     a {
       color: #2ba2d9;
@@ -353,34 +377,69 @@
       padding: 0;
       margin-top: 10px;
     }
+    @media only screen and (max-width: 767px) {
+      h6 {
+        font-size: 14px;
+      }
+    }
     blockquote {
       font-style: italic;
       border-left: 4px solid #e7e7e7;
       font-weight: 600;
       line-height: 2.0em;
-      margin-left: 0;
       padding-left: 40px;
       margin-top: 20px;
       margin-bottom: 20px;
+      margin-left: 0;
+      margin-right: 40px;
+    }
+    @media only screen and (max-width: 767px) {
+      blockquote {
+        line-height: 1.6em;
+        padding-left: 15px;
+        margin-right: 0px;
+      }
     }
     ul {
       margin-top: 10px;
       font-weight: 600;
       margin-left: 20px;
+      padding-left: 40px;
+    }
+    @media only screen and (max-width: 767px) {
+      ul {
+        margin-left: 5px;
+        padding-left: 15px;
+      }
     }
     ul li {
       margin-bottom: 10px;
       line-height: 1.8em;
     }
+    @media only screen and (max-width: 767px) {
+      ul li {
+        font-size: 14px;
+        line-height: 1.6em;
+      }
+    }
     .well {
       margin-top: 40px;
-      width: 100%;
       background-color: #ffffff;
       border-bottom: 2px solid #c9c9c9;
+    }
+    @media only screen and (max-width: 767px) {
+      .well {
+        margin-top: 15px;
+      }
     }
     .inner-well {
       padding: 20px 40px;
       min-height: 30px;
+    }
+    @media only screen and (max-width: 767px) {
+      .inner-well {
+        padding: 15px;
+      }
     }
     .well .show-on-hover {
       opacity: 0;
@@ -417,9 +476,22 @@
       height: auto;
       background-color: #ffffff;
     }
+    @media only screen and (max-width: 767px) {
+      .image {
+        margin-top: 15px;
+      }
+    }
     .image img {
       width: 100%;
       height: auto;
+    }
+    .snowflake-container {
+      width: 200px;
+    }
+    @media only screen and (max-width: 767px) {
+      .snowflake-container {
+        width: 50px;
+      }
     }
     .bar {
       position: fixed;
@@ -464,19 +536,54 @@
       width: 100%;
       padding: 40px 0;
     }
+    @media only screen and (max-width: 767px) {
+      .about {
+        margin-top: 15px;
+      }
+    }
     .picture {
       margin-left: 91px;
       float: left;
       display: block;
       width: 157px;
       height: 157px;
+      text-align: left;
+    }
+    .picture img {
+      width: 157px;
+      height: 157px;
+    }
+    @media only screen and (max-width: 767px) {
+      .picture img {
+        width: 140px;
+        height: auto;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .picture {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
     }
     .bio {
       display: block;
       float: left;
       width: 250px;
-      margin-left: 50px;
-      margin-top: 20px;
+      padding-left: 50px;
+      padding-top: 20px;
+      padding-right: 0;
+      text-align: left;
+    }
+    @media only screen and (max-width: 767px) {
+      .bio {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+      }
     }
     .bio h3 {
       font-size: 14px;
@@ -485,6 +592,7 @@
       margin: 0;
       margin-bottom: 10px;
     }
+
   </style>
   
   <!-- facebook -->
@@ -497,7 +605,7 @@
   fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script>
 		jQuery(function($){
 			var imluke;
@@ -549,132 +657,127 @@
 <body>
 
 <header class="bar">
-    	<div class="container clearfix">
-			<nav class="pull-left" style="width: 200px;">
-				<a href="/" style="width: 120px; height: 30px; display: block;">
-					<img src="http://static.tumblr.com/kqxmsd2/kjjmkum5s/snowflake.svg" class="brand" alt="Home">
-					<h1 style="display: none;">imluke</h1>
-				</a>
-			</nav>
-			<nav class="pull-right social-links">
-				<ul>
-					<li><a href="http://github.com/lukechesser" title="Code on GitHub" target="_blank"><img src="http://static.tumblr.com/kqxmsd2/36Hmkum51/github.svg" alt="GitHub Icon" class="js-wobble"></a></li>
-					<li><a href="http://dribbble.com/lukechesser" title="Designs on Dribbble" target="_blank"><img src="http://static.tumblr.com/kqxmsd2/SZPmkum3x/dribbble.svg" alt="Dribbble Icon" class="js-wobble"></a></li>
-					<li><a href="http://twitter.com/lukechesser" title="Short thoughts on Twitter" target="_blank"><img src="http://static.tumblr.com/kqxmsd2/nH8mkum6f/twitter.svg" alt="Twitter Icon" class="js-wobble"></a></li>
-				</ul>
-			</nav>
-		</div> <!-- close .container -->
-	</header> <!-- close .bar -->
+	<div class="container clearfix">
+		<nav class="pull-left" style="width: 200px;">
+			<a href="/" style="width: 120px; height: 30px; display: block;">
+				<img src="http://static.tumblr.com/kqxmsd2/kjjmkum5s/snowflake.svg" class="brand" alt="Home">
+				<h1 style="display: none;">imluke</h1>
+			</a>
+		</nav>
+		<nav class="pull-right social-links">
+			<ul>
+				<li><a href="http://github.com/lukechesser" title="Code on GitHub" target="_blank"><img src="http://static.tumblr.com/kqxmsd2/36Hmkum51/github.svg" alt="GitHub Icon" class="js-wobble"></a></li>
+				<li><a href="http://dribbble.com/lukechesser" title="Designs on Dribbble" target="_blank"><img src="http://static.tumblr.com/kqxmsd2/SZPmkum3x/dribbble.svg" alt="Dribbble Icon" class="js-wobble"></a></li>
+				<li><a href="http://twitter.com/lukechesser" title="Short thoughts on Twitter" target="_blank"><img src="http://static.tumblr.com/kqxmsd2/nH8mkum6f/twitter.svg" alt="Twitter Icon" class="js-wobble"></a></li>
+			</ul>
+		</nav>
+	</div> <!-- close .container -->
+</header> <!-- close .bar -->
+        
+{block:Posts}
 
-	<div class="container" style="margin-top: 115px;">
-        {block:Posts}
+  <!-- TEXT -->
+  {block:Text}
+  <div class="container">
+    <section class="well">
+    	<div class="inner-well">
+				<div class="well-header clearfix">
+					<div class="pull-left">
+						{block:Date}<h6>{TimeAgo}</h6>{/block:Date}
+					</div>
+					<div class="pull-right">
+						<ul class="actions">
+							<li><a href="{Permalink}"><img src="http://static.tumblr.com/kqxmsd2/OWymlh1le/link.svg" alt="Permalink Icon"></a></li>
+              <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/lKimkum8u/heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li> -->
+              <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/hhimkum9j/share.svg" alt="Share Icon"></a></li> -->
+						</ul>
+					</div>
+				</div> <!-- close .well-header -->
+				<article>
+          {Body}
+        </article>
+  		</div> <!-- close .inner-well -->
+		</section> <!-- close .well -->
+  </div> <!-- close .container -->
+  {/block:Text}
             
-        <!-- TEXT-->
-        {block:Text}
-        <section class="well">
-        	<div class="inner-well">
-    				<div class="well-header clearfix">
-    					<div class="pull-left">
-    						{block:Date}<h6>{TimeAgo}</h6>{/block:Date}
-    					</div>
-    					<div class="pull-right">
-    						<ul class="actions">
-    							<li><a href="{Permalink}"><img src="http://static.tumblr.com/kqxmsd2/OWymlh1le/link.svg" alt="Permalink Icon"></a></li>
-                  <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/lKimkum8u/heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li> -->
-                  <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/hhimkum9j/share.svg" alt="Share Icon"></a></li> -->
-    						</ul>
-    					</div>
-    				</div> <!-- close .well-header -->
-    				<article>
-              {Body}
-            </article>
-      		</div> <!-- close .inner-well -->
-    		</section> <!-- close .well -->
-        {/block:Text}
-            
-            <!-- QUOTES -->
-            {block:Quote}
-            <section class="well">
-                <div class="inner-well">
-    				<div class="well-header clearfix">
-    					<div class="pull-left">
-    						{block:Date}<h6>{TimeAgo}</h6>{/block:Date}
-    					</div>
-    					<div class="pull-right">
-    						<ul class="actions">
-    							<li><a href="{Permalink}"><img src="http://static.tumblr.com/kqxmsd2/OWymlh1le/link.svg" alt="Permalink Icon"></a></li>
-                  <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/lKimkum8u/heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li> -->
-                  <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/hhimkum9j/share.svg" alt="Share Icon"></a></li> -->
-    						</ul>
-    					</div>
-    				</div> <!-- close .well-header -->
-    				<article>
-                    <blockquote>
-    					{Quote}
-                        {block:Source}
+  <!-- QUOTES -->
+  {block:Quote}
+  <div class="container">
+    <section class="well">
+      <div class="inner-well">
+				<div class="well-header clearfix">
+					<div class="pull-left">
+						{block:Date}<h6>{TimeAgo}</h6>{/block:Date}
+					</div>
+					<div class="pull-right">
+						<ul class="actions">
+							<li><a href="{Permalink}"><img src="http://static.tumblr.com/kqxmsd2/OWymlh1le/link.svg" alt="Permalink Icon"></a></li>
+              <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/lKimkum8u/heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li> -->
+              <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/hhimkum9j/share.svg" alt="Share Icon"></a></li> -->
+						</ul>
+					</div>
+				</div> <!-- close .well-header -->
+				<article>
+          <blockquote>
+					{Quote}
+          {block:Source}
 						<p><cite>{Source}</cite></p>
-                        {/block:Source}
+          {/block:Source}
 					</blockquote>
-                    </article>
-        		</div> <!-- close .inner-well -->
-    		</section> <!-- close .well -->
-            {/block:Quote}
+        </article>
+  		</div> <!-- close .inner-well -->
+		</section> <!-- close .well -->
+  </div> <!-- close .container -->
+  {/block:Quote}
             
-            <!-- IMAGES -->
-            {block:Photo}
-            <section class="image">
-                <img src="{PhotoURL-HighRes}">
-    		</section>
-            {/block:Photo}
+  <!-- IMAGES -->
+  {block:Photo}
+  <section class="image">
+      <img src="{PhotoURL-HighRes}">
+  </section>
+  {/block:Photo}
             
-            <!-- VIDEOS -->
-            {block:Video}
-            <section class="image">
-                {Video-500}
-            </section>
-            {/block:Video}
+  <!-- VIDEOS -->
+  {block:Video}
+  <section class="image">
+      {Video-500}
+  </section>
+  {/block:Video}
             
-        {/block:Posts}
-    </div> <!-- close .container -->
+{/block:Posts}
 		
-    {block:Pagination}
-    <div id="pagination">
-      {block:NextPage}<a href="{NextPage}">&larr; {lang:Older entries}</a>{/block:NextPage}
-      <span id="pagecount">{lang:Page CurrentPage of TotalPages}</span>
-      {block:PreviousPage}<a href="{PreviousPage}">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
-    </div>
-    {/block:Pagination}
+{block:Pagination}
+<div id="pagination">
+  {block:NextPage}<a href="{NextPage}">&larr; {lang:Older entries}</a>{/block:NextPage}
+  <span id="pagecount">{lang:Page CurrentPage of TotalPages}</span>
+  {block:PreviousPage}<a href="{PreviousPage}">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
+</div>
+{/block:Pagination}
     
-    {block:PermalinkPagination}
-    <div id="pagination">
-      {block:PreviousPost}<a href="{PreviousPost}">&larr; {lang:Previous post}</a>{/block:PreviousPost}
-      <span id="pagecount">&nbsp;</span>
-      {block:NextPost}<a href="{NextPost}">{lang:Next post} &rarr;</a>{/block:NextPost}
-    </div>
-    {/block:PermalinkPagination}
-    
-    
-	<footer class="about">
-		<div class="container clearfix">
-			<div class="picture">
-				<img src="http://static.tumblr.com/kqxmsd2/gNumkum33/lukechesser_2x.png" alt="Luke Chesser" width="157px" height="157px">
-			</div> <!-- close .pull-left -->
-			<div class="bio">
-				<h3>Hi, I'm Luke.</h3>
-				<h3>I design and build products <a href="http://www.ooomf.com/" target="_blank">@ooomf</a> in Montreal, Canada. I'm interested in education, conventions, and the process of learning.</h3>
-			</div> <!-- close .pull-right -->
-		</div> <!-- close .container -->
-	</footer>
+{block:PermalinkPagination}
+<div id="pagination">
+  {block:PreviousPost}<a href="{PreviousPost}">&larr; {lang:Previous post}</a>{/block:PreviousPost}
+  <span id="pagecount">&nbsp;</span>
+  {block:NextPost}<a href="{NextPost}">{lang:Next post} &rarr;</a>{/block:NextPost}
+</div>
+{/block:PermalinkPagination}
+     
+<footer class="about">
+	<div class="container clearfix">
+		<div class="picture">
+			<img src="http://static.tumblr.com/kqxmsd2/gNumkum33/lukechesser_2x.png" alt="Luke Chesser">
+		</div> <!-- close .pull-left -->
+		<div class="bio">
+			<h3>Hi, I'm Luke.</h3>
+			<h3>I design and build products <a href="http://www.ooomf.com/" target="_blank">@ooomf</a> in Montreal, Canada. I'm interested in education, conventions, and the process of learning.</h3>
+		</div> <!-- close .pull-right -->
+	</div> <!-- close .container -->
+</footer>
 
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33610302-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
+  analytics.load("to706hnl5g");
 </script>
 </body>
 </html>
