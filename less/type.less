@@ -1,0 +1,104 @@
+body {
+	background-color: @gray100;
+	color: @darkBlue;
+	font-family: 'Open Sans', 'Helvetica Nueue', Helvetica, sans-serif;
+}
+
+.container {
+	width: 640px;
+	margin: 0 auto;
+
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box; 
+	}
+}
+
+.empty {
+	margin-top: 120px;
+	@media only screen and (max-width: 767px) {
+		margin-top: 85px;
+	}
+}
+
+p {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 2.0em;
+
+	@media only screen and (max-width: 767px) {
+		font-size: 14px;
+		line-height: 1.6em;
+	}
+}
+
+a {
+	color: @blue;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+h6 {
+	color: @green;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+
+	@media only screen and (max-width: 767px) {
+		font-size: 14px;
+	}
+}
+
+blockquote {
+	font-style:italic;
+	border-left: 4px solid @gray90;
+	font-weight: 600;
+  line-height: 2.0em;
+  padding-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 40px;
+  @media only screen and (max-width: 767px) {
+		line-height: 1.6em;
+		padding-left: 15px;
+		margin-right: 0px;
+	}
+
+	cite a {
+		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+
+ul {
+	margin-top: 10px;
+	font-weight: 600;
+	margin-left: 20px;
+	padding-left: 40px;
+
+	@media only screen and (max-width: 767px) {
+		margin-left: 5px;
+		padding-left: 15px;
+	}
+
+	li {
+		margin-bottom: 10px;
+		line-height: 1.8em;
+	@media only screen and (max-width: 767px) {
+		font-size: 14px;
+		line-height: 1.6em;
+	}
+
+	}
+}

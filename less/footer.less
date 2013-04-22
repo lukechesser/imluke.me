@@ -1,0 +1,62 @@
+.about {
+	margin-top: 40px;
+	background-color: @white;
+	width: 100%;
+	padding: 40px 0;
+
+	@media only screen and (max-width: 767px) {
+		margin-top: 15px;
+	}
+}
+
+.picture {
+	margin-left: 91px;
+	float: left;
+	display: block;
+	width: 157px;
+	height: 157px;
+	text-align: left;
+
+	img {
+		width: 157px;
+		height: 157px;
+		
+		@media only screen and (max-width: 767px) {
+			width: 140px;
+			height: auto;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
+
+.bio {
+	display: block;
+	float: left;
+	width: 250px;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-right: 0;
+	text-align: left;
+
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 40px;
+		padding-right: 40px;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.6em;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+}

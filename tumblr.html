@@ -1,0 +1,794 @@
+<!-- You can find the source code for this blog at Github: https://github.com/lukechesser/imluke.me -->
+
+<!DOCTYPE html>
+
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+  <meta name="description" content="{MetaDescription}"/>
+  <meta name="viewport" content="width=device-width">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://static.tumblr.com/kqxmsd2/slzmlgwea/imluke-72_2x.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://static.tumblr.com/kqxmsd2/A4kmlgwfg/imluke_2x.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://static.tumblr.com/kqxmsd2/gUxmlgwds/imluke-72.png.png">
+  <link rel="apple-touch-icon-precomposed" href="http://static.tumblr.com/kqxmsd2/xbJmlgwey/imluke.png">
+  
+  <link rel="shortcut icon" href="http://static.tumblr.com/kqxmsd2/NRymlgwca/favicon.png"/>
+  <link rel="shortcut icon" href="http://static.tumblr.com/kqxmsd2/My3mlgw9o/favicon.ico"/>
+  <link rel="alternate" type="application/rss+xml" name="RSS" href="{RSS}"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
+  
+  <style type="text/css" media="screen">
+    /* The source code for this theme, is available at https://github.com/lukechesser/imluke.me */
+    /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    nav,
+    section,
+    summary {
+      display: block;
+    }
+    audio,
+    canvas,
+    video {
+      display: inline-block;
+    }
+    html {
+      font-family: sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    body {
+      margin: 0;
+    }
+    a:focus {
+      outline: thin dotted;
+    }
+    a:active,
+    a:hover {
+      outline: 0;
+    }
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+    abbr[title] {
+      border-bottom: 1px dotted;
+    }
+    b,
+    strong {
+      font-weight: bold;
+    }
+    hr {
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      height: 0;
+    }
+    code,
+    pre {
+      font-family: monospace, serif;
+      font-size: 1em;
+    }
+    pre {
+      white-space: pre-wrap;
+    }
+    q {
+      quotes: "\201C" "\201D" "\2018" "\2019";
+    }
+    small {
+      font-size: 80%;
+    }
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+    sup {
+      top: -0.5em;
+    }
+    sub {
+      bottom: -0.25em;
+    }
+    img {
+      border: 0;
+    }
+    svg:not(:root) {
+      overflow: hidden;
+    }
+    figure {
+      margin: 0;
+    }
+    fieldset {
+      border: 1px solid #c0c0c0;
+      margin: 0 2px;
+      padding: 0.35em 0.625em 0.75em;
+    }
+    legend {
+      border: 0;
+      padding: 0;
+    }
+    button,
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      margin: 0;
+    }
+    button,
+    input {
+      line-height: normal;
+    }
+    button,
+    select {
+      text-transform: none;
+    }
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      -webkit-appearance: button;
+      cursor: pointer;
+    }
+    button[disabled],
+    html input[disabled] {
+      cursor: default;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+      box-sizing: border-box;
+      padding: 0;
+    }
+    input[type="search"] {
+      -webkit-appearance: textfield;
+      -moz-box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+    textarea {
+      overflow: auto;
+      vertical-align: top;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    .animated {
+      -webkit-animation-fill-mode: both;
+      -moz-animation-fill-mode: both;
+      -ms-animation-fill-mode: both;
+      -o-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-duration: .75s;
+      -moz-animation-duration: .75s;
+      -ms-animation-duration: .75s;
+      -o-animation-duration: .75s;
+      animation-duration: .75s;
+    }
+    @-webkit-keyframes wobble {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      15% {
+        -webkit-transform: rotate(-15deg);
+      }
+      30% {
+        -webkit-transform: rotate(12deg);
+      }
+      45% {
+        -webkit-transform: rotate(-7deg);
+      }
+      60% {
+        -webkit-transform: rotate(5deg);
+      }
+      75% {
+        -webkit-transform: rotate(-2deg);
+      }
+      100% {
+        -webkit-transform: rotate(0deg);
+      }
+    }
+    @-moz-keyframes wobble {
+      0% {
+        -moz-transform: rotate(0deg);
+      }
+      15% {
+        -moz-transform: rotate(-15deg);
+      }
+      30% {
+        -moz-transform: rotate(12deg);
+      }
+      45% {
+        -moz-transform: rotate(-7deg);
+      }
+      60% {
+        -moz-transform: rotate(5deg);
+      }
+      75% {
+        -moz-transform: rotate(-2deg);
+      }
+      100% {
+        -moz-transform: rotate(0deg);
+      }
+    }
+    @-o-keyframes wobble {
+      0% {
+        -o-transform: rotate(0deg);
+      }
+      15% {
+        -o-transform: rotate(-15deg);
+      }
+      30% {
+        -o-transform: rotate(12deg);
+      }
+      45% {
+        -o-transform: rotate(-7deg);
+      }
+      60% {
+        -o-transform: rotate(5deg);
+      }
+      75% {
+        -o-transform: rotate(-2deg);
+      }
+      100% {
+        -o-transform: rotate(0deg);
+      }
+    }
+    @keyframes wobble {
+      0% {
+        transform: rotate(0deg);
+      }
+      15% {
+        transform: rotate(-15deg);
+      }
+      30% {
+        transform: rotate(12deg);
+      }
+      45% {
+        transform: rotate(-7deg);
+      }
+      60% {
+        transform: rotate(5deg);
+      }
+      75% {
+        transform: rotate(-2deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    .wobble {
+      -webkit-animation-name: wobble;
+      -moz-animation-name: wobble;
+      -o-animation-name: wobble;
+      animation-name: wobble;
+    }
+    @-webkit-keyframes slideIn {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateX(-40%);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+      }
+    }
+    .slideIn {
+      -webkit-animation-name: slideIn;
+      -moz-animation-name: slideIn;
+      -o-animation-name: slideIn;
+      animation-name: slideIn;
+    }
+    .clearfix {
+      *zoom: 1;
+    }
+    .clearfix:before,
+    .clearfix:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    .clearfix:after {
+      clear: both;
+    }
+    .pull-right {
+      float: right;
+    }
+    .pull-left {
+      float: left;
+    }
+    .hide {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+    .relative {
+      position: relative;
+    }
+    body {
+      background-color: #f7f7f7;
+      color: #34464f;
+      font-family: 'Open Sans', 'Helvetica Nueue', Helvetica, sans-serif;
+    }
+    .container {
+      width: 640px;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 767px) {
+      .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    }
+    .empty {
+      margin-top: 120px;
+    }
+    @media only screen and (max-width: 767px) {
+      .empty {
+        margin-top: 85px;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 2.0em;
+    }
+    @media only screen and (max-width: 767px) {
+      p {
+        font-size: 14px;
+        line-height: 1.6em;
+      }
+    }
+    a {
+      color: #2ba2d9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h6 {
+      color: #1ec082;
+      font-size: 0.8em;
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }
+    @media only screen and (max-width: 767px) {
+      h6 {
+        font-size: 14px;
+      }
+    }
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid #e7e7e7;
+      font-weight: 600;
+      line-height: 2.0em;
+      padding-left: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 0;
+      margin-right: 40px;
+    }
+    @media only screen and (max-width: 767px) {
+      blockquote {
+        line-height: 1.6em;
+        padding-left: 15px;
+        margin-right: 0px;
+      }
+    }
+    blockquote cite a {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    ul {
+      margin-top: 10px;
+      font-weight: 600;
+      margin-left: 20px;
+      padding-left: 40px;
+    }
+    @media only screen and (max-width: 767px) {
+      ul {
+        margin-left: 5px;
+        padding-left: 15px;
+      }
+    }
+    ul li {
+      margin-bottom: 10px;
+      line-height: 1.8em;
+    }
+    @media only screen and (max-width: 767px) {
+      ul li {
+        font-size: 14px;
+        line-height: 1.6em;
+      }
+    }
+    .well {
+      margin-top: 40px;
+      background-color: #ffffff;
+      border-bottom: 2px solid #c9c9c9;
+    }
+    @media only screen and (max-width: 767px) {
+      .well {
+        margin-top: 15px;
+      }
+    }
+    .inner-well {
+      padding: 20px 40px;
+      min-height: 30px;
+    }
+    @media only screen and (max-width: 767px) {
+      .inner-well {
+        padding: 15px;
+      }
+    }
+    .well .show-on-hover {
+      opacity: 0;
+      -webkit-transition: opacity .75s ease-in-out;
+      -moz-transition: opacity .75s ease-in-out;
+      -o-transition: opacity .75s ease-in-out;
+      -ms-transition: opacity .75s ease-in-out;
+      transition: opacity .75s ease-in-out;
+    }
+    .well:hover .show-on-hover {
+      opacity: 1;
+    }
+    .actions {
+      margin-left: 0;
+      list-style: none;
+      margin-top: 0;
+    }
+    .actions li {
+      float: left;
+      margin-left: 10px;
+      opacity: .5;
+    }
+    .actions li:hover {
+      opacity: .7;
+    }
+    .actions li img {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      height: 24px;
+    }
+    .image {
+      margin-top: 40px;
+      width: 100%;
+      height: auto;
+      background-color: #ffffff;
+    }
+    @media only screen and (max-width: 767px) {
+      .image {
+        margin-top: 15px;
+      }
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+    .snowflake-container {
+      width: 200px;
+    }
+    @media only screen and (max-width: 767px) {
+      .snowflake-container {
+        width: 50px;
+      }
+    }
+    .bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 75px;
+      z-index: 100;
+      background-color: #2ba2d9;
+    }
+    .bar nav {
+      margin: 20px 0;
+    }
+    .bar a h1 {
+      display: block;
+      font-size: 1.0em;
+      color: #ffffff;
+      float: left;
+      margin-left: 10px;
+      margin-top: 6px;
+    }
+    .brand {
+      float: left;
+      height: 30px;
+    }
+    .social-links ul {
+      margin-left: 0;
+      list-style: none;
+      margin-top: 0;
+    }
+    .social-links li {
+      float: left;
+      margin-left: 10px;
+    }
+    .social-links li img {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      height: 26px;
+    }
+    .about {
+      margin-top: 40px;
+      background-color: #ffffff;
+      width: 100%;
+      padding: 40px 0;
+    }
+    @media only screen and (max-width: 767px) {
+      .about {
+        margin-top: 15px;
+      }
+    }
+    .picture {
+      margin-left: 91px;
+      float: left;
+      display: block;
+      width: 157px;
+      height: 157px;
+      text-align: left;
+    }
+    .picture img {
+      width: 157px;
+      height: 157px;
+    }
+    @media only screen and (max-width: 767px) {
+      .picture img {
+        width: 140px;
+        height: auto;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .picture {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    }
+    .bio {
+      display: block;
+      float: left;
+      width: 250px;
+      padding-left: 50px;
+      padding-top: 20px;
+      padding-right: 0;
+      text-align: left;
+    }
+    @media only screen and (max-width: 767px) {
+      .bio {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+      }
+    }
+    .bio h3 {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.6em;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  </style>
+  
+  <!-- facebook -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+    
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script>
+		jQuery(function($){
+			var imluke;
+			
+			imluke = {
+				cache: {
+					$snowflakeLink: $('.brand').parent(),
+					$snowflakeText: $('.brand').next('h1'),
+					$wobbleLinks: $('.js-wobble')
+				},
+
+				ready: function() {
+					this.initializeListeners();
+				},
+
+				initializeListeners: function() {
+					var c = imluke.cache;
+					imluke.createAnimationOnHover.call(c.$snowflakeLink, "slideIn", c.$snowflakeText, true);
+					c.$wobbleLinks.each(function(index){
+						imluke.createAnimationOnHover.call(this, "wobble");
+					});
+				},
+
+				createAnimationOnHover: function(animationClass, $objectToAnimate, objectIsHidden) {
+					var $this = $(this);
+					if (!$objectToAnimate) {
+						$objectToAnimate = $this;
+					}
+					$objectToAnimate.addClass("animated");
+					$this.on("mouseenter", function() {
+						if (objectIsHidden) {
+							$objectToAnimate.show();
+						}
+						$objectToAnimate.addClass(animationClass);
+					});
+					$this.on("mouseleave", function() {
+						$objectToAnimate.removeClass(animationClass);
+						if (objectIsHidden) {
+							$objectToAnimate.fadeOut();
+						}
+					});
+				}
+			}
+			imluke.ready();
+		});
+	</script>
+</head>
+
+<body>
+
+<header class="bar">
+	<div class="container clearfix">
+		<nav class="pull-left snowflake-container">
+			<a href="/" style="width: 120px; height: 30px; display: block;">
+				<img src="http://static.tumblr.com/kqxmsd2/kjjmkum5s/snowflake.svg" class="brand" alt="Home">
+				<h1 style="display: none;">imluke</h1>
+			</a>
+		</nav>
+		<nav class="pull-right social-links">
+			<ul>
+				<li><a href="http://github.com/lukechesser" title="Code on GitHub" target="_blank"><img src="http://static.tumblr.com/kqxmsd2/36Hmkum51/github.svg" alt="GitHub Icon" class="js-wobble"></a></li>
+				<li><a href="http://dribbble.com/lukechesser" title="Designs on Dribbble" target="_blank"><img src="http://static.tumblr.com/kqxmsd2/SZPmkum3x/dribbble.svg" alt="Dribbble Icon" class="js-wobble"></a></li>
+				<li><a href="http://twitter.com/lukechesser" title="Short thoughts on Twitter" target="_blank"><img src="http://static.tumblr.com/kqxmsd2/nH8mkum6f/twitter.svg" alt="Twitter Icon" class="js-wobble"></a></li>
+			</ul>
+		</nav>
+	</div> <!-- close .container -->
+</header> <!-- close .bar -->
+
+<div class="empty"></div>
+
+{block:Posts}
+
+  <!-- TEXT -->
+  {block:Text}
+  <div class="container">
+    <section class="well">
+    	<div class="inner-well">
+				<div class="well-header clearfix">
+					<div class="pull-left">
+						{block:Date}<h6>{TimeAgo}</h6>{/block:Date}
+					</div>
+					<div class="pull-right">
+						<ul class="actions">
+							<li><a href="{Permalink}"><img src="http://static.tumblr.com/kqxmsd2/OWymlh1le/link.svg" alt="Permalink Icon"></a></li>
+              <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/lKimkum8u/heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li> -->
+              <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/hhimkum9j/share.svg" alt="Share Icon"></a></li> -->
+						</ul>
+					</div>
+				</div> <!-- close .well-header -->
+				<article>
+          {Body}
+        </article>
+  		</div> <!-- close .inner-well -->
+		</section> <!-- close .well -->
+  </div> <!-- close .container -->
+  {/block:Text}
+            
+  <!-- QUOTES -->
+  {block:Quote}
+  <div class="container">
+    <section class="well">
+      <div class="inner-well">
+				<div class="well-header clearfix">
+					<div class="pull-left">
+						{block:Date}<h6>{TimeAgo}</h6>{/block:Date}
+					</div>
+					<div class="pull-right">
+						<ul class="actions">
+							<li><a href="{Permalink}"><img src="http://static.tumblr.com/kqxmsd2/OWymlh1le/link.svg" alt="Permalink Icon"></a></li>
+              <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/lKimkum8u/heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li> -->
+              <!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/hhimkum9j/share.svg" alt="Share Icon"></a></li> -->
+						</ul>
+					</div>
+				</div> <!-- close .well-header -->
+				<article>
+          <blockquote>
+					{Quote}
+          {block:Source}
+						<p><cite>{Source}</cite></p>
+          {/block:Source}
+					</blockquote>
+        </article>
+  		</div> <!-- close .inner-well -->
+		</section> <!-- close .well -->
+  </div> <!-- close .container -->
+  {/block:Quote}
+            
+  <!-- IMAGES -->
+  {block:Photo}
+  <section class="image">
+      <img src="{PhotoURL-HighRes}">
+  </section>
+  {/block:Photo}
+            
+  <!-- VIDEOS -->
+  {block:Video}
+  <section class="image">
+      {Video-500}
+  </section>
+  {/block:Video}
+            
+{/block:Posts}
+		
+{block:Pagination}
+<div class="container">
+  <div id="pagination">
+    {block:NextPage}<a href="{NextPage}">&larr; {lang:Older entries}</a>{/block:NextPage}
+    <span id="pagecount">{lang:Page CurrentPage of TotalPages}</span>
+    {block:PreviousPage}<a href="{PreviousPage}">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
+  </div>
+</div> <!-- close .container -->
+{/block:Pagination}
+    
+{block:PermalinkPagination}
+<div class="container">
+  <div id="pagination">
+    {block:PreviousPost}<a href="{PreviousPost}">&larr; {lang:Previous post}</a>{/block:PreviousPost}
+    <span id="pagecount">&nbsp;</span>
+    {block:NextPost}<a href="{NextPost}">{lang:Next post} &rarr;</a>{/block:NextPost}
+  </div>
+</div> <!-- close .container -->
+{/block:PermalinkPagination}
+     
+<footer class="about">
+	<div class="container clearfix">
+		<div class="picture">
+			<img src="http://static.tumblr.com/kqxmsd2/gNumkum33/lukechesser_2x.png" alt="Luke Chesser">
+		</div> <!-- close .pull-left -->
+		<div class="bio">
+			<h3>Hi, I'm Luke.</h3>
+			<h3>I design and build products <a href="http://www.ooomf.com/" target="_blank">@ooomf</a> in Montreal, Canada. I'm interested in education, conventions, and the process of learning.</h3>
+		</div> <!-- close .pull-right -->
+	</div> <!-- close .container -->
+</footer>
+
+<script type="text/javascript">
+  var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
+  analytics.load("to706hnl5g");
+</script>
+</body>
+</html>

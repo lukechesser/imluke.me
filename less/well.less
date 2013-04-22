@@ -1,0 +1,73 @@
+.well {
+	margin-top: 40px;
+	background-color: @white;
+	border-bottom: 2px solid @gray80;
+	@media only screen and (max-width: 767px) {
+		margin-top: 15px;
+	}
+}
+
+.inner-well {
+	padding: 20px 40px;
+	min-height: 30px;
+
+	@media only screen and (max-width: 767px) {
+		padding: 15px;
+	}
+}
+
+.well .show-on-hover {
+	opacity: 0;
+	.transition(~"opacity .75s ease-in-out");
+}
+
+.well:hover .show-on-hover {
+	opacity: 1;
+}
+
+.actions {
+
+	margin-left: 0;
+	list-style: none;
+	margin-top: 0;
+	
+	li {
+		float: left;
+		margin-left: 10px;
+		opacity: .5;
+
+		&:hover {
+			opacity: .7;
+		}
+
+		img {
+			padding-top: 2px;
+			padding-bottom: 2px;
+			height: 24px;
+		}
+	}	
+}
+
+.image {
+	margin-top: 40px;
+	width: 100%;
+	height: auto;
+	background-color: @white;
+
+	@media only screen and (max-width: 767px) {
+		margin-top: 15px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.snowflake-container {
+	width: 200px;
+
+	@media only screen and (max-width: 767px) {
+	width: 50px;
+	}
+}
