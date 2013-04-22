@@ -428,6 +428,31 @@
         line-height: 1.6em;
       }
     }
+    .pagination {
+      padding-top: 30px;
+      padding-bottom: 0px;
+    }
+    @media only screen and (max-width: 767px) {
+      .pagination {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+    .btn {
+      padding: 8px 30px;
+      background-color: #2ba2d9;
+      color: #ffffff;
+      -webkit-border-radius: 3px;
+      -webkit-background-clip: padding-box;
+      -moz-border-radius: 3px;
+      -moz-background-clip: padding;
+      border-radius: 3px;
+      background-clip: padding-box;
+    }
+    .btn:hover {
+      text-decoration: none;
+      background-color: #2083b1;
+    }
     .well {
       margin-top: 40px;
       background-color: #ffffff;
@@ -755,22 +780,24 @@
 {/block:Posts}
 		
 {block:Pagination}
-<div class="container">
-  <div id="pagination">
-    {block:NextPage}<a href="{NextPage}">&larr; {lang:Older entries}</a>{/block:NextPage}
-    <span id="pagecount">{lang:Page CurrentPage of TotalPages}</span>
-    {block:PreviousPage}<a href="{PreviousPage}">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
-  </div>
+<div class="container pagination clearfix">
+  <div class="pull-left">
+    {block:NextPage}<a href="{NextPage}" class="btn">&larr;</a>{/block:NextPage}
+  </div> <!-- close .pull-left -->
+  <div class="pull-right">
+    {block:PreviousPage}<a href="{PreviousPage}" class="btn">&rarr;</a>{/block:PreviousPage}
+  </div> <!-- close .pull-right -->
 </div> <!-- close .container -->
 {/block:Pagination}
     
 {block:PermalinkPagination}
-<div class="container">
-  <div id="pagination">
-    {block:PreviousPost}<a href="{PreviousPost}">&larr; {lang:Previous post}</a>{/block:PreviousPost}
-    <span id="pagecount">&nbsp;</span>
-    {block:NextPost}<a href="{NextPost}">{lang:Next post} &rarr;</a>{/block:NextPost}
-  </div>
+<div class="container pagination clearfix">
+  <div class="pull-left">
+    {block:PreviousPost}<a href="{PreviousPost}" class="btn">&larr;</a>{/block:PreviousPost}
+  </div> <!-- close .pull-left -->
+  <div class="pull-right">
+    {block:NextPost}<a href="{NextPost}" class="btn">&rarr;</a>{/block:NextPost}
+  </div> <!-- close .pull-right -->
 </div> <!-- close .container -->
 {/block:PermalinkPagination}
      

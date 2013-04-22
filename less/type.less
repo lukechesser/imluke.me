@@ -102,3 +102,25 @@ ul {
 
 	}
 }
+
+.pagination {
+	padding-top: 30px;
+	padding-bottom: 0px;
+
+	@media only screen and (max-width: 767px) {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+.btn {
+	padding: 8px 30px;
+	background-color: @blue;
+	color: @white;
+	.border-radius(3px);
+
+	&:hover {
+		text-decoration: none;
+		background-color: darken(@blue, 10%);
+	}
+}
