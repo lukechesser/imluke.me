@@ -344,11 +344,11 @@
         box-sizing: border-box;
       }
     }
-    body > .container:first-of-type {
+    .empty {
       margin-top: 120px;
     }
     @media only screen and (max-width: 767px) {
-      body > .container:first-of-type {
+      .empty {
         margin-top: 85px;
       }
     }
@@ -399,6 +399,12 @@
         padding-left: 15px;
         margin-right: 0px;
       }
+    }
+    blockquote cite a {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     ul {
       margin-top: 10px;
@@ -592,7 +598,6 @@
       margin: 0;
       margin-bottom: 10px;
     }
-
   </style>
   
   <!-- facebook -->
@@ -658,7 +663,7 @@
 
 <header class="bar">
 	<div class="container clearfix">
-		<nav class="pull-left" style="width: 200px;">
+		<nav class="pull-left snowflake-container">
 			<a href="/" style="width: 120px; height: 30px; display: block;">
 				<img src="http://static.tumblr.com/kqxmsd2/kjjmkum5s/snowflake.svg" class="brand" alt="Home">
 				<h1 style="display: none;">imluke</h1>
@@ -673,7 +678,9 @@
 		</nav>
 	</div> <!-- close .container -->
 </header> <!-- close .bar -->
-        
+
+<div class="empty"></div>
+
 {block:Posts}
 
   <!-- TEXT -->
@@ -748,19 +755,23 @@
 {/block:Posts}
 		
 {block:Pagination}
-<div id="pagination">
-  {block:NextPage}<a href="{NextPage}">&larr; {lang:Older entries}</a>{/block:NextPage}
-  <span id="pagecount">{lang:Page CurrentPage of TotalPages}</span>
-  {block:PreviousPage}<a href="{PreviousPage}">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
-</div>
+<div class="container">
+  <div id="pagination">
+    {block:NextPage}<a href="{NextPage}">&larr; {lang:Older entries}</a>{/block:NextPage}
+    <span id="pagecount">{lang:Page CurrentPage of TotalPages}</span>
+    {block:PreviousPage}<a href="{PreviousPage}">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
+  </div>
+</div> <!-- close .container -->
 {/block:Pagination}
     
 {block:PermalinkPagination}
-<div id="pagination">
-  {block:PreviousPost}<a href="{PreviousPost}">&larr; {lang:Previous post}</a>{/block:PreviousPost}
-  <span id="pagecount">&nbsp;</span>
-  {block:NextPost}<a href="{NextPost}">{lang:Next post} &rarr;</a>{/block:NextPost}
-</div>
+<div class="container">
+  <div id="pagination">
+    {block:PreviousPost}<a href="{PreviousPost}">&larr; {lang:Previous post}</a>{/block:PreviousPost}
+    <span id="pagecount">&nbsp;</span>
+    {block:NextPost}<a href="{NextPost}">{lang:Next post} &rarr;</a>{/block:NextPost}
+  </div>
+</div> <!-- close .container -->
 {/block:PermalinkPagination}
      
 <footer class="about">
