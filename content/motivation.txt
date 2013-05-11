@@ -1,0 +1,20 @@
+Motivation
+Published: May 03, 2013 at 04:02PM
+----------------------------
+<p>You know that feeling when you&#8217;re envious of someone else&#8217;s accomplishments, and you wish you could be more like them? You sit there and you tell yourself &#8220;K, this week I&#8217;m going to work really hard and do something like xxxxxxxxx&#8221;. Then the week after, you look back and you&#8217;ve spent the week doing 20 other things, none of them related to your original goal.</p>
+
+<p>I have that happen a lot. Like all the time. Especially when it comes to coding, because I wish I were better. I look at guys like <a href="https://twitter.com/sstephenson" target="_blank">Sam Stephenson</a>, and <a href="https://twitter.com/tjholowaychuk" target="_blank">TJ Holowaychuck</a>, and tell myself that I should try to be as good at coding as them. But the thing is, I&#8217;m not meant to be. If I were supposed to be as good at coding as them, I would be. So would you. So would anyone. Coders like Sam and TJ can&#8217;t help but code. They don&#8217;t sit down and say &#8220;K what should I do today? I should probably code, I haven&#8217;t released something amazing in like a week&#8221;. They do it without thinking.</p>
+
+<p>If that isn&#8217;t you, don&#8217;t sweat it. You&#8217;re not meant to do that then. There is something you <strong>are</strong> meant to do — it&#8217;s something you probably already do everyday, or a combination of things you do everyday — you just don&#8217;t realize it yet. If you try and force yourself to love something, you&#8217;ll end up burning out and being unhappy.</p>
+
+<p>You should pay attention to the things that really excite you. Not just momentarily excited about, but the things that consistently energize you. The things that you look back on that <strong>you</strong> think are special.</p>
+
+<p>For me, I realize that I like designing and coding occasionally, but the thing that excites me, and the reason why I originally learned how to code and design, is the possibility of creating something that others can use or experience. I love creating products, videos, music — anything that I can take and put in front of an audience and see them react to. Coding allows me to do that, at relatively no cost. You can build something and put it in front of the entire world for free.</p>
+
+<p>That excites me, but it doesn&#8217;t have to excite you. Maybe you love writing short stories or maybe you love running. Do those things when you can, and stop being envious of people you really aren&#8217;t meant to be. You can&#8217;t change who you are and what you love, but you can stop wasting your energy chasing things that you aren&#8217;t ever going to be.</p>
+
+<p><a href="https://twitter.com/benschwarz" target="_blank">Ben Schwarz</a> had <a href="http://germanforblack.com/post/41974741089/career-advice-a-quick-10-year-retrospective" target="_blank">a similar thought on his blog a little while back</a>, in reference to working in the creative industry:</p>
+
+<blockquote>
+  <p>One can not understate the importance of understanding what motivates you as a person before embarking on a project that involves working for or by yourself. Self-analyze — All of the time. Figure out what drives you, makes you tick, understand it… repeat.</p>
+</blockquote> 

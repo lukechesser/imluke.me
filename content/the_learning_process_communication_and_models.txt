@@ -1,0 +1,52 @@
+The Learning Process: Communication and Models
+Published: May 10, 2013 at 08:53PM
+----------------------------
+<p>The learning process is one of communication and models. Essentially, it is the role of teachers to present the model in as clear and understandable a form as possible. Teachers then answer questions to resolve the inconsistencies between the teacher&#8217;s model and the learner&#8217;s model. Communication is inherently error-prone. Think of it like a bad data transfer, where the number and magnitude of the errors are proportional to the effectiveness of the teacher&#8217;s presentation.</p>
+
+<p>The teacher has a mental model that they present to the learner. In communicating their model, errors are naturally introduced as the teacher encodes the information through their own particular choice of wording, ordering of topics, and their inherent understanding of the model. The information is then received (hopefully) and decoded. In decoding, more errors are introduced. If we discount retention (i.e. how the models persist over time), the relationship between the models probably looks something like this:</p>
+
+<p><img src="http://media.tumblr.com/9854f6d84dcafd49b76d775877ff6146/tumblr_inline_mmlzsm3DaT1qz4rgp.png" alt=""/></p>
+
+<p>There are a few important processes to notice.</p>
+
+<ul><li><p><strong>Red squares exist in the teacher&#8217;s model</strong>. Depending on the teacher&#8217;s experience, training, and understanding, the teacher&#8217;s model is not entirely correct to begin with. Teachers were at one point students, and if they&#8217;re good teachers, they <em>still</em> are. They adopted their model from someone else, who adopted it from someone else, who adopted it from someone else, etc. <strong>Complex models are rarely error-free, for both teacher and learner</strong>.</p></li>
+<li><p><strong>A red square cannot become a green square when transferred</strong>. If there is an error in the teacher&#8217;s model, that error persists in the student&#8217;s model.</p></li>
+<li><p><strong>In a high quality communication, most green squares remain green squares</strong>. The quality of the communication (how well the subject is understood by the student) determines the integrity of the student&#8217;s model – or, put another way – a high-quality communication ensures that the teacher&#8217;s model is mirrored in the student&#8217;s model.</p></li>
+</ul><p>Since the goal of teaching is to ensure the correct transfer of information, an effective teaching process doesn&#8217;t stop after the initial communication. Generally, students respond with questions. These questions occur because incorrect models necessarily contain inconsistencies. This back and forth between teachers and students is incredibly important. The updated models could look something like this:</p>
+
+<p><img src="http://media.tumblr.com/43f8f86170e29ec5c361f54775c2cbef/tumblr_inline_mmlzsvxCaE1qz4rgp.png" alt=""/></p>
+
+<p>Again, a couple of interesting processes to note.</p>
+
+<ul><li><p>Multiple iterations produce a better student model. This is obvious. The more we teach, the better the student&#8217;s understanding of the material. At worst, there is no change in the student&#8217;s model.</p></li>
+<li><p>Errors in the teacher&#8217;s model continue to remain in the student&#8217;s model, despite multiple iterations.</p></li>
+</ul><p>Although this example shows no change in the teacher&#8217;s model when questions are asked, one can easily imagine a scenario where a student communicates to the teacher a possible error in their model. This isn&#8217;t to be confused with a &#8216;slip&#8217; or momentary error, where, for example, the teacher says &#8216;1646&#8217; instead of &#8216;1664&#8217; - these are human errors, not model errors. I mean the types of scenarios that occur when a student has been exposed to the topics or ideas previously. In reality, the teaching process is rarely initialized like this:</p>
+
+<p><img src="http://media.tumblr.com/2503b18c3588af081011d07d76ea1f13/tumblr_inline_mmlzt34G0z1qz4rgp.png" alt=""/></p>
+
+<p>Since teachers aren&#8217;t perfect, and students don&#8217;t live in a bubble, the initialization models probably more closely resemble something like this:</p>
+
+<p><img src="http://media.tumblr.com/6646de5dbb9bd54bda45724ded9dcfb9/tumblr_inline_mmlztbfN6Q1qz4rgp.png" alt=""/></p>
+
+<p>At initialization the student may have correct information that the teacher does not. This provides the teacher the opportunity to learn during the teaching process – to improve their own model. An example interaction continuing below.</p>
+
+<p><img src="http://media.tumblr.com/fbaac1df7d699a77f2c3be56702a5dc5/tumblr_inline_mmlzti4tST1qz4rgp.png" alt=""/></p>
+
+<p>There are three main principles to take away from this. I present them as problem statements that a successful education system must overcome to be successful.</p>
+
+<ol><li><p><strong>A teacher cannot teach something they do not understand</strong>. It&#8217;s obvious, but you&#8217;d be surprised how often the educational system tasks teachers with explaining subjects they don&#8217;t fully understand.</p></li>
+<li><p><strong>A teacher may have the right model, but cannot efficiently transfer the model&#8217;s information unless they are good communicators</strong>. This is probably the biggest problem in teaching today. Teachers must stimulate their students with engaging visuals, appropriate examples, and challenging problems - teaching doesn&#8217;t mean endlessly spouting facts and theories. Teachers must be fluent in the language of their students. Again, you would be surprised how many teacher&#8217;s lack this basic requirement. I&#8217;m looking at you McGill Engineering.</p></li>
+<li><p><strong>Students must be able to resolve the conflicts in their models through questions</strong>. Inconsistencies inevitably arise, as no teacher can perfectly mirror their model to their students. In elementary schools, small class sizes allow students the ability to ask their teachers questions. In post-secondary systems, breakout groups, tutorials, and office hours provide a similar experience.</p></li>
+</ol><p>Providing quality public education at national and international scale is difficult, to say the least. Either our educational systems must radically increase their budgets, or we must look to the technology sector to provide a 21st-century solution. Luckily, a technology already exists that solves the massive problems in scaling a quality network. That technology is the internet.</p>
+
+<p>The internet is the most powerful communication medium ever invented. <a href="http://en.wikipedia.org/wiki/Web_2.0" target="_blank">Web 2.0</a> is the latest realization of the internet&#8217;s true potential. A single voice can scale indefinitely for eternity. The web is, for the most part, accessible to all – translatable, open, transferable. The web is real-time.</p>
+
+<p>It&#8217;s easy to see how the web can overcome the first two problems presented previously. The teacher of a subject is the expert in the field that communicates the best with their students. <a href="http://www.udacity.com/" target="_blank">Udacity</a> has successfully implemented this at a small-scale - focusing first on a few computer science courses. For example, in their Python programming course, <a href="http://www.udacity.com/view#Course/cs101/CourseRev/apr2012" target="_blank">CS 101</a>, students are treated to a few interesting guest teachers. When discussing search engines and web crawlers, Sergey Brin, the co-founder of Google, makes an appearance. Who&#8217;s more qualified to discuss the principles of web crawlers and search engines than the man who created the most successful search algorithm in history? In another class, their course on building a startup, <a href="http://www.udacity.com/overview/Course/ep245/" target="_blank">EP 245</a>, Steve Blank, THE authority on startup theory, teaches the entire course. Who better to teach the emerging principles and theory of startups, than the best-selling author and professor himself?</p>
+
+<p>Other examples can be seen at sites like <a href="http://www.lynda.com/" target="_blank">Lynda.com</a> and <a href="http://www.peepcode.com/" target="_blank">Peepcode</a>. It turns out, most experts are lifelong students, and appreciate the chance to teach. Whether they are successful communicators is another story. I&#8217;ve got a number of opinions on how to turn bad communicators into good teachers, but I&#8217;ll leave that subject for another article.</p>
+
+<p>So the web can solve the first two problems, but what about the third? Presently, there aren&#8217;t many good examples of websites that provide the sort of interactivity and exploration that a real, live teacher does. The ability for the student to question their understanding of the subject – <strong>as the ideas and information are being formed in the brain</strong> – is paramount to the learning process.</p>
+
+<p>But it&#8217;s this back and forth that is difficult to implement on the web. How do we build in this ability to naturally question ideas, to explore concepts that we don&#8217;t understand, to link concepts and ideas together?</p>
+
+<p>The learning platform that connects the power of the web with the solutions to the problems of expertise, communication, and interactive questioning, will undoubtably succeed.</p> 
