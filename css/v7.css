@@ -335,6 +335,9 @@ p {
   font-weight: 600;
   line-height: 2.0em;
 }
+p img {
+  width: 100%;
+}
 @media only screen and (max-width: 767px) {
   p {
     font-size: 14px;
@@ -437,9 +440,6 @@ ul li {
   margin-top: 40px;
   background-color: #ffffff;
   border-bottom: 2px solid #c9c9c9;
-}
-.well img {
-  width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .well {
