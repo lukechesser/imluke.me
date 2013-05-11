@@ -362,6 +362,7 @@ h6 {
 }
 blockquote {
   font-style: italic;
+  font-size: 16px;
   border-left: 4px solid #e7e7e7;
   font-weight: 600;
   line-height: 2.0em;
@@ -376,6 +377,7 @@ blockquote {
     line-height: 1.6em;
     padding-left: 15px;
     margin-right: 0px;
+    font-size: 14px;
   }
 }
 blockquote cite a {
@@ -435,6 +437,9 @@ ul li {
   margin-top: 40px;
   background-color: #ffffff;
   border-bottom: 2px solid #c9c9c9;
+}
+.well img {
+  width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .well {
