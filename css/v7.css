@@ -303,6 +303,9 @@ table {
 .relative {
   position: relative;
 }
+.inline-block {
+  display: inline-block;
+}
 body {
   background-color: #f7f7f7;
   color: #34464f;
@@ -349,6 +352,14 @@ a {
   text-decoration: none;
 }
 a:hover {
+  text-decoration: none;
+}
+p a:hover,
+h1 a:hover h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
   text-decoration: underline;
 }
 h6 {
@@ -436,6 +447,10 @@ ul li {
   text-decoration: none;
   background-color: #2083b1;
 }
+.icon {
+  font-size: 140%;
+  vertical-align: -4px;
+}
 .well {
   margin-top: 40px;
   background-color: #ffffff;
@@ -474,15 +489,23 @@ ul li {
 .actions li {
   float: left;
   margin-left: 10px;
-  opacity: .5;
 }
-.actions li:hover {
-  opacity: .7;
+.actions li a {
+  color: #c9c9c9;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
-.actions li img {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  height: 24px;
+.actions li a.permalink:hover {
+  color: #2ba2d9;
+}
+.actions li a.heart:hover {
+  color: #f19aa1;
+}
+.actions li a.share:hover {
+  color: #1ec082;
 }
 .image {
   margin-top: 40px;
@@ -514,6 +537,8 @@ ul li {
   height: 75px;
   z-index: 100;
   background-color: #2ba2d9;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 .bar nav {
   margin: 20px 0;
@@ -537,12 +562,12 @@ ul li {
 }
 .social-links li {
   float: left;
+  margin-top: -4px;
   margin-left: 10px;
+  font-size: 28px;
 }
-.social-links li img {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  height: 26px;
+.social-links li a {
+  color: #ffffff;
 }
 .about {
   margin-top: 40px;

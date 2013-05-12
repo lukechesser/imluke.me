@@ -35,16 +35,22 @@
 	li {
 		float: left;
 		margin-left: 10px;
-		opacity: .5;
 
-		&:hover {
-			opacity: .7;
-		}
+		a {
+			color: @gray80;
+			.transition(~"all .3s ease-in-out");
 
-		img {
-			padding-top: 2px;
-			padding-bottom: 2px;
-			height: 24px;
+			&.permalink:hover {
+				color: @blue;
+			}
+
+			&.heart:hover {
+				color: @red;
+			}
+
+			&.share:hover {
+				color: @green;
+			}
 		}
 	}	
 }

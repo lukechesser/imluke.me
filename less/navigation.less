@@ -5,6 +5,8 @@
 	height: 75px;
 	z-index: 100;
 	background-color: @blue;
+	-webkit-backface-visibility: hidden; // prevent flickers on animations
+	-webkit-perspective: 1000; // prevent flickers on animations
 
 	nav {
 		margin: 20px 0;
@@ -35,12 +37,11 @@
 
 	li {
 		float: left;
+		margin-top: -4px;
 		margin-left: 10px;
-
-		img {
-			padding-top: 2px;
-			padding-bottom: 2px;
-			height: 26px;
+		font-size: 28px;
+		a {
+			color: @white;
 		}
 	}
 }

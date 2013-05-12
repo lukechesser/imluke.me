@@ -31,9 +31,11 @@
   <link rel="shortcut icon" href="http://static.tumblr.com/kqxmsd2/My3mlgw9o/favicon.ico"/>
   <link rel="alternate" type="application/rss+xml" name="RSS" href="{RSS}"/>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/v7.css">
+	<link rel="stylesheet" type="text/css" href="webfonts/icons.css">
+	<!--[if lte IE 7]><script src="webfonts/lte-ie7.js"></script><![endif]-->
 </head>
 <body>
 	<header class="bar">
@@ -46,9 +48,9 @@
 			</nav>
 			<nav class="pull-right social-links">
 				<ul>
-					<li><a href="http://github.com/lukechesser" title="Code on GitHub"><img src="http://static.tumblr.com/kqxmsd2/36Hmkum51/github.svg" alt="GitHub Icon" class="js-wobble"></a></li>
-					<li><a href="http://dribbble.com/lukechesser" title="Designs on Dribbble"><img src="http://static.tumblr.com/kqxmsd2/SZPmkum3x/dribbble.svg" alt="Dribbble Icon" class="js-wobble"></a></li>
-					<li><a href="http://twitter.com/lukechesser" title="Short thoughts on Twitter"><img src="http://static.tumblr.com/kqxmsd2/nH8mkum6f/twitter.svg" alt="Twitter Icon" class="js-wobble"></a></li>
+					<li><a href="http://github.com/lukechesser" title="Code on GitHub" target="_blank"><span class="js-wobble icon inline-block" aria-hidden="true" data-icon="&#xe024;"></span></a></li>
+					<li><a href="http://dribbble.com/lukechesser" title="Designs on Dribbble" target="_blank"><span class="js-wobble icon inline-block" aria-hidden="true" data-icon="&#xe025;"></span></a></li>
+					<li><a href="http://twitter.com/lukechesser" title="Short thoughts on Twitter" target="_blank"><span class="js-wobble icon inline-block" aria-hidden="true" data-icon="&#xe023;"></span></a></li>
 				</ul>
 			</nav>
 		</div> <!-- close .container -->
@@ -65,9 +67,9 @@
 					</div>
 					<div class="pull-right">
 						<ul class="actions">
-							<li><a href="{Permalink}"><img src="http://static.tumblr.com/kqxmsd2/OWymlh1le/link.svg" alt="Permalink Icon"></a></li>
-							<!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/lKimkum8u/heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li> -->
-							<!-- <li><a href="#"><img src="http://static.tumblr.com/kqxmsd2/hhimkum9j/share.svg" alt="Share Icon"></a></li> -->
+							<li><a href="{Permalink}" class="permalink"><span class="icon" aria-hidden="true" data-icon="&#xe00b;"></span></a></li>
+							<li><a href="#" class="heart"><span class="icon" aria-hidden="true" data-icon="&#xe008;"></span></a></li> 
+							<li><a href="#" class="share"><span class="icon" aria-hidden="true" data-icon="&#xe00a;"></span></a></li>
 						</ul>
 					</div>
 				</div> <!-- close .well-header -->
@@ -104,8 +106,9 @@
 					</div>
 					<div class="pull-right">
 						<ul class="actions">
-							<li><a href="#"><img src="img/Heart.svg" alt="Heart Icon" style="height: 22px; margin-top: 1px;"></a></li>
-							<li><a href="#"><img src="img/Share.svg" alt="Share Icon"></a></li>
+							<li><a href="{Permalink}" class="permalink"><span class="icon" aria-hidden="true" data-icon="&#xe00b;"></span></a></li>
+							<li><a href="#" class="heart"><span class="icon" aria-hidden="true" data-icon="&#xe008;"></span></a></li> 
+							<li><a href="#" class="share"><span class="icon" aria-hidden="true" data-icon="&#xe00a;"></span></a></li>
 						</ul>
 					</div>
 				</div> <!-- close .well-header -->
@@ -120,10 +123,10 @@
 
 	<div class="container pagination clearfix">
 		<div class="pull-left">
-	    <a href="http://imluke.me/post/48162289011" class="btn">&larr;</a>
+	    <a href="http://imluke.me/post/48162289011" class="btn"><span class="icon" aria-hidden="true" data-icon="&#xe00f;"></span></a>
 	  </div> <!-- close .pull-left -->
 	  <div class="pull-right">
-	    <a href="http://imluke.me/post/48546996350" class="btn">&rarr;</a>
+	    <a href="http://imluke.me/post/48546996350" class="btn"><span class="icon" aria-hidden="true" data-icon="&#xe010;"></span></a>
 	  </div> <!-- close .pull-right -->
 	</div> <!-- close .container -->
 
