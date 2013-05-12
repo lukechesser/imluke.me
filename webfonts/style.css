@@ -1,0 +1,153 @@
+@font-face {
+	font-family: 'imluke-icos';
+	src:url('fonts/imluke-icos.eot');
+	src:url('fonts/imluke-icos.eot?#iefix') format('embedded-opentype'),
+		url('fonts/imluke-icos.woff') format('woff'),
+		url('fonts/imluke-icos.ttf') format('truetype'),
+		url('fonts/imluke-icos.svg#imluke-icos') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'imluke-icos';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-untitled, .icon-untitled-2, .icon-untitled-3, .icon-untitled-4, .icon-untitled-5, .icon-untitled-6, .icon-untitled-7, .icon-untitled-8, .icon-untitled-9, .icon-untitled-10, .icon-untitled-11, .icon-untitled-12, .icon-untitled-13, .icon-untitled-14, .icon-untitled-15, .icon-untitled-16, .icon-untitled-17, .icon-untitled-18, .icon-untitled-19, .icon-untitled-20, .icon-untitled-21, .icon-untitled-22, .icon-untitled-23, .icon-untitled-24, .icon-untitled-25, .icon-untitled-26, .icon-untitled-27, .icon-untitled-28, .icon-untitled-29, .icon-untitled-30, .icon-untitled-31, .icon-untitled-32, .icon-untitled-33, .icon-untitled-34, .icon-untitled-35, .icon-untitled-36, .icon-untitled-37, .icon-untitled-38 {
+	font-family: 'imluke-icos';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-untitled:before {
+	content: "\e000";
+}
+.icon-untitled-2:before {
+	content: "\e001";
+}
+.icon-untitled-3:before {
+	content: "\e002";
+}
+.icon-untitled-4:before {
+	content: "\e003";
+}
+.icon-untitled-5:before {
+	content: "\e004";
+}
+.icon-untitled-6:before {
+	content: "\e005";
+}
+.icon-untitled-7:before {
+	content: "\e006";
+}
+.icon-untitled-8:before {
+	content: "\e007";
+}
+.icon-untitled-9:before {
+	content: "\e008";
+}
+.icon-untitled-10:before {
+	content: "\e009";
+}
+.icon-untitled-11:before {
+	content: "\e00a";
+}
+.icon-untitled-12:before {
+	content: "\e00b";
+}
+.icon-untitled-13:before {
+	content: "\e00c";
+}
+.icon-untitled-14:before {
+	content: "\e00d";
+}
+.icon-untitled-15:before {
+	content: "\e00e";
+}
+.icon-untitled-16:before {
+	content: "\e00f";
+}
+.icon-untitled-17:before {
+	content: "\e010";
+}
+.icon-untitled-18:before {
+	content: "\e011";
+}
+.icon-untitled-19:before {
+	content: "\e012";
+}
+.icon-untitled-20:before {
+	content: "\e013";
+}
+.icon-untitled-21:before {
+	content: "\e014";
+}
+.icon-untitled-22:before {
+	content: "\e015";
+}
+.icon-untitled-23:before {
+	content: "\e016";
+}
+.icon-untitled-24:before {
+	content: "\e017";
+}
+.icon-untitled-25:before {
+	content: "\e018";
+}
+.icon-untitled-26:before {
+	content: "\e019";
+}
+.icon-untitled-27:before {
+	content: "\e01a";
+}
+.icon-untitled-28:before {
+	content: "\e01b";
+}
+.icon-untitled-29:before {
+	content: "\e01c";
+}
+.icon-untitled-30:before {
+	content: "\e01d";
+}
+.icon-untitled-31:before {
+	content: "\e01e";
+}
+.icon-untitled-32:before {
+	content: "\e01f";
+}
+.icon-untitled-33:before {
+	content: "\e020";
+}
+.icon-untitled-34:before {
+	content: "\e021";
+}
+.icon-untitled-35:before {
+	content: "\e022";
+}
+.icon-untitled-36:before {
+	content: "\e023";
+}
+.icon-untitled-37:before {
+	content: "\e024";
+}
+.icon-untitled-38:before {
+	content: "\e025";
+}
