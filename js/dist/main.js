@@ -91,7 +91,7 @@
             return AppScroll;
         });
     }
-}).call(this, window);;jQuery(function($){
+}).call(this, window);;(function($){
   var imluke;
   
   imluke = {
@@ -134,4 +134,4 @@
     }
   };
   imluke.ready();
-});
+})(jQuery);

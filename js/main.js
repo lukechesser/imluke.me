@@ -1,4 +1,4 @@
-jQuery(function($){
+(function($){
   var imluke;
   
   imluke = {
@@ -41,4 +41,4 @@ jQuery(function($){
     }
   };
   imluke.ready();
-});
+})(jQuery);
