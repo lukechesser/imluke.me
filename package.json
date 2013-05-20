@@ -1,0 +1,17 @@
+{
+  "name": "imluke.me",
+  "version": "7.1.0",
+  "description": "theme and assets for imluke.me",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukechesser/imluke.me.git"
+  },
+  "author": "Luke Chesser",
+  "license": "BSD",
+  "dependencies": {
+    "grunt": "~0.4.1"
+  }
+}
