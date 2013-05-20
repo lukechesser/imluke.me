@@ -1,0 +1,3 @@
+[submodule "appscroll"]
+	path = appscroll
+	url = git://github.com/jakiestfu/AppScroll.js.git
