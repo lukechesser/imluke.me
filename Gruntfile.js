@@ -2,6 +2,14 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    less: {
+      options: {
+        yuicompress: true
+      },
+      files: {
+        src: "less/v7.less", dest: "css/v7.css"
+      }
+    },
     concat: {
       options: {
         separator: ';'
@@ -35,15 +43,18 @@ module.exports = function(grunt) {
     },
     watch: {
       files: ['<%= jshint.files %>'],
-      tasks: ['jshint', 'concat']
+      tasks: ['jshint', 'concat', 'less']
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
   grunt.registerTask('test', ['jshint']);
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less']);
+  grunt.registerTask('deploy', ['jshint', 'concat', 'uglify', 'less', 'bump']);
 };
