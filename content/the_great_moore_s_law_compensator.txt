@@ -1,0 +1,8 @@
+The Great Moore's Law Compensator
+Published: May 14, 2013 at 12:43AM
+----------------------------
+<blockquote>
+  <p>The great Moore&#8217;s law compensator (TGMLC), generally referred to as bloat, and also known as Wirth&#8217;s law, is the principle that successive generations of computer software acquire enough bloat to offset the performance gains predicted by Moore&#8217;s law. In a 2008 article in InfoWorld, Randall C. Kennedy, formerly of Intel, introduces this term using successive versions of Microsoft Office between the year 2000 and 2007 as his premise. Despite the gains in computational performance during this time period according to Moore&#8217;s law, Office 2007 performed the same task at half the speed on a prototypical year 2007 computer as compared to Office 2000 on a year 2000 computer.</p>
+</blockquote>
+
+<p>That is insane.</p> 

@@ -1,0 +1,4 @@
+Rule #1 of Product Design
+Published: May 14, 2013 at 12:28AM
+----------------------------
+<p><em>Rule #1 of Product Design:</em> Never make your users tag things. It doesn&#8217;t work (Facebook, you are the exception). Either generate auto-tags for the user or let the them create groups and categories and place the entry into a group or category.</p> 

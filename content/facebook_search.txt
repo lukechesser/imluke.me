@@ -1,0 +1,10 @@
+Facebook Search
+Published: May 14, 2013 at 12:01PM
+----------------------------
+<p>I really like Facebook Search, but from what I&#8217;ve seen of the way my friends use Facebook, none of them have even noticed the change.</p>
+
+<p>My suggestion for Facebook would be to generate search queries on each of the pages that users visit.</p>
+
+<p><img src="http://media.tumblr.com/b4f63fc1aab023c36b9a78e174181eb8/tumblr_inline_mmspu5auoj1qz4rgp.png" alt="Facebook Search"/></p>
+
+<p>Often times that hardest part about designing a new feature is encouraging exploration.</p> 
