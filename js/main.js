@@ -39,6 +39,6 @@ jQuery(function($){
         }
       });
     }
-  }
+  };
   imluke.ready();
 });
