@@ -1,6 +1,6 @@
-<!-- You can find the source code for this blog at Github: https://github.com/lukechesser/imluke.me -->
-
 <!DOCTYPE html>
+
+<!-- You can find the source code for this blog at Github: https://github.com/lukechesser/imluke.me -->
 
 <html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
@@ -141,13 +141,14 @@
   {block:Video}
   <div class="container">
     <section class="image video">
-        {Video-500}
+      {Video-500}
+      {block:Caption}
+        <div class="inner-well">
+          {Caption}
+        </div> <!-- close .inner-well -->
+      {/block:Caption}
     </section>
-    {block:Caption}
-    <div class="inner-well">
-      {Caption}
-    </div> <!-- close .inner-well -->
-    {/block:Caption}
+    </div> <!-- close .container -->
   {/block:Video}
             
 {/block:Posts}
