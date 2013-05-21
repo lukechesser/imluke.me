@@ -6,9 +6,7 @@
       $snowflakeLink: $('.brand').parent(),
       $snowflakeText: $('.brand').next('h1'),
       $wobbleLinks: $('.js-wobble'),
-      $toolbar: $('.bar'),
-      $content: $('#content'),
-      scroller: null
+      $videos: $('.video')
     },
 
     ready : function () {
@@ -21,8 +19,9 @@
       c.$wobbleLinks.each(function(index){
         App.createAnimationOnHover.call(this, "wobble");
       });
-      App.createScroller(c.$toolbar, c.$content);
-      App.startScroller();
+      $(c.$videos).each(function () {
+        $(this).fitVids();
+      });
     },
 
     createAnimationOnHover : function (animationClass, $objectToAnimate, objectIsHidden) {
@@ -43,21 +42,6 @@
           $objectToAnimate.fadeOut();
         }
       });
-    },
-
-    createScroller : function (toolbarElement, contentElement) {
-      App.cache.scroller = new AppScroll({
-        toolbar: toolbarElement,
-        scroller: contentElement
-      });
-    },
-
-    startScroller : function () {
-      App.cache.scroller.on();
-    },
-
-    stopScroller : function () {
-      App.cache.scroller.off();
     }
   };
   App.ready();

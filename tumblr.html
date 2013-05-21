@@ -139,9 +139,15 @@
             
   <!-- VIDEOS -->
   {block:Video}
-  <section class="image">
-      {Video-500}
-  </section>
+  <div class="container">
+    <section class="image video">
+        {Video-500}
+    </section>
+    {block:Caption}
+    <div class="inner-well">
+      {Caption}
+    </div> <!-- close .inner-well -->
+    {/block:Caption}
   {/block:Video}
             
 {/block:Posts}
