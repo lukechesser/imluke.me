@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['components/appscroll/AppScroll.js', 'js/*.js'],
+        src: ['js/*.js'],
         dest: 'js/dist/main.js'
       }
     },
