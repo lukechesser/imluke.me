@@ -3,8 +3,8 @@
 
 <html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
   <meta name="description" content="{MetaDescription}"/>
   <meta name="viewport" content="width=device-width">
   <meta name="google-site-verification" content="IBIyX0xqfYtlJdUHBMfEKY_RLOoWihzrWHBaN_SHcfo" />
@@ -53,49 +53,49 @@
 <body>
 
 <header class="bar" role="banner">
-	<div class="container clearfix">
-		<nav class="pull-left snowflake-container" role="navgiation">
-			<a href="/" style="width: 120px; height: 30px; display: block;" title="Return home">
-				<img src="http://static.tumblr.com/kqxmsd2/kjjmkum5s/snowflake.svg" class="brand" alt="Home Icon">
-				<h1 style="display: none;">imluke</h1>
-			</a>
-		</nav>
-		<nav class="pull-right social-links" role="navigation">
-			<ul>
-				<li><a href="http://github.com/lukechesser" title="Code on GitHub" target="_blank"><span class="js-wobble icon inline-block" aria-hidden="true" data-icon="&#xe024;"></span></a></li>
+  <div class="container clearfix">
+    <nav class="pull-left snowflake-container" role="navgiation">
+      <a href="/" style="width: 120px; height: 30px; display: block;" title="Return home">
+        <img src="http://static.tumblr.com/kqxmsd2/kjjmkum5s/snowflake.svg" class="brand" alt="Home Icon">
+        <h1 style="display: none;">imluke</h1>
+      </a>
+    </nav>
+    <nav class="pull-right social-links" role="navigation">
+      <ul>
+        <li><a href="http://github.com/lukechesser" title="Code on GitHub" target="_blank"><span class="js-wobble icon inline-block" aria-hidden="true" data-icon="&#xe024;"></span></a></li>
         <li><a href="http://dribbble.com/lukechesser" title="Designs on Dribbble" target="_blank"><span class="js-wobble icon inline-block" aria-hidden="true" data-icon="&#xe025;"></span></a></li>
         <li><a href="http://twitter.com/lukechesser" title="Short thoughts on Twitter" target="_blank"><span class="js-wobble icon inline-block" aria-hidden="true" data-icon="&#xe023;"></span></a></li>
-			</ul>
-		</nav>
-	</div> <!-- close .container -->
+      </ul>
+    </nav>
+  </div> <!-- close .container -->
 </header> <!-- close .bar -->
 
 <div class="empty"></div>
 
-{block:Posts}
 <div role="main">
+{block:Posts}
   <!-- TEXT -->
   {block:Text}
   <div class="container">
     <section class="well">
-    	<div class="inner-well">
-				<div class="well-header clearfix">
-					<div class="pull-left">
-						{block:Date}<h6>{TimeAgo}</h6>{/block:Date}
-					</div>
-					<div class="pull-right">
-						<ul class="actions">
-							<li><a href="{Permalink}" class="permalink"><span class="icon" aria-hidden="true" data-icon="&#xe00b;"></span></a></li>
+      <div class="inner-well">
+        <div class="well-header clearfix">
+          <div class="pull-left">
+            {block:Date}<h6>{TimeAgo}</h6>{/block:Date}
+          </div>
+          <div class="pull-right">
+            <ul class="actions" role="navigation">
+              <li><a href="{Permalink}" class="permalink"><span class="icon" aria-hidden="true" data-icon="&#xe00b;"></span></a></li>
               <!-- <li><a href="#" class="heart"><span class="icon" aria-hidden="true" data-icon="&#xe008;"></span></a></li>  -->
               <!-- <li><a href="#" class="share"><span class="icon" aria-hidden="true" data-icon="&#xe00a;"></span></a></li> -->
-						</ul>
-					</div>
-				</div> <!-- close .well-header -->
-				<article>
+            </ul>
+          </div>
+        </div> <!-- close .well-header -->
+        <article>
           {Body}
         </article>
-  		</div> <!-- close .inner-well -->
-		</section> <!-- close .well -->
+      </div> <!-- close .inner-well -->
+    </section> <!-- close .well -->
   </div> <!-- close .container -->
   {/block:Text}
             
@@ -104,28 +104,28 @@
   <div class="container">
     <section class="well">
       <div class="inner-well">
-				<div class="well-header clearfix">
-					<div class="pull-left">
-						{block:Date}<h6>{TimeAgo}</h6>{/block:Date}
-					</div>
-					<div class="pull-right">
-						<ul class="actions">
-							<li><a href="{Permalink}" class="permalink"><span class="icon" aria-hidden="true" data-icon="&#xe00b;"></span></a></li>
+        <div class="well-header clearfix">
+          <div class="pull-left">
+            {block:Date}<h6>{TimeAgo}</h6>{/block:Date}
+          </div>
+          <div class="pull-right">
+            <ul class="actions" role="navigation">
+              <li><a href="{Permalink}" class="permalink"><span class="icon" aria-hidden="true" data-icon="&#xe00b;"></span></a></li>
               <!-- <li><a href="#" class="heart"><span class="icon" aria-hidden="true" data-icon="&#xe008;"></span></a></li>  -->
               <!-- <li><a href="#" class="share"><span class="icon" aria-hidden="true" data-icon="&#xe00a;"></span></a></li> -->
-						</ul>
-					</div>
-				</div> <!-- close .well-header -->
-				<article>
+            </ul>
+          </div>
+        </div> <!-- close .well-header -->
+        <article>
           <blockquote>
-					{Quote}
+          {Quote}
           {block:Source}
-						<p><cite>{Source}</cite></p>
+            <p><cite>{Source}</cite></p>
           {/block:Source}
-					</blockquote>
+          </blockquote>
         </article>
-  		</div> <!-- close .inner-well -->
-		</section> <!-- close .well -->
+      </div> <!-- close .inner-well -->
+    </section> <!-- close .well -->
   </div> <!-- close .container -->
   {/block:Quote}
             
@@ -152,7 +152,7 @@
             
 {/block:Posts}
 </div>
-		
+    
 {block:Pagination}
 <div class="container pagination clearfix" role="navigation">
   <div class="pull-left">
@@ -176,15 +176,15 @@
 {/block:PermalinkPagination}
      
 <footer class="about" role="contentinfo">
-	<div class="container clearfix">
-		<div class="picture">
-			<img src="http://static.tumblr.com/kqxmsd2/gNumkum33/lukechesser_2x.png" alt="Luke Chesser">
-		</div> <!-- close .pull-left -->
-		<div class="bio">
-			<h3>Hi, I'm Luke.</h3>
-			<h3>I design and build products <a href="https://www.ooomf.com/" target="_blank" title="Connecting awesome projects with the best freelancers">@ooomf</a> in Montreal, Canada. I'm interested in education, happiness, startups, and the process of learning.</h3>
-		</div> <!-- close .pull-right -->
-	</div> <!-- close .container -->
+  <div class="container clearfix">
+    <div class="picture">
+      <img src="http://static.tumblr.com/kqxmsd2/gNumkum33/lukechesser_2x.png" alt="Luke Chesser">
+    </div> <!-- close .pull-left -->
+    <div class="bio">
+      <h3>Hi, I'm Luke.</h3>
+      <h3>I design and build products <a href="https://www.ooomf.com/" target="_blank" title="Connecting awesome projects with the best freelancers">@ooomf</a> in Montreal, Canada. I'm interested in education, happiness, startups, and the process of learning.</h3>
+    </div> <!-- close .pull-right -->
+  </div> <!-- close .container -->
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
