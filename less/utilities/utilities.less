@@ -1,52 +1,68 @@
-/* The source code for this theme, is available at https://github.com/lukechesser/imluke.me */
-
 // * ===============================================================
-// * v7
+// * Utilities
+// * general utility classes
 // * 
-// * 1. variables
-// * 2. reset
-// * 3. mixins
-// * 4. utilities
-// * 5. elements
-// * 6. partials
+// * 1. clearfix
+// * 2. floats
+// * 3. show/hide
+// * 4. relative
+// * 5. inline-block
 // *
 // * ===============================================================
 
 // * ===============================================================
-// * 1. variables
+// * 1. clearfix
 // * ===============================================================
 
-@import "variables.less";
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
 
 // * ===============================================================
-// * 2. reset
+// * 2. floats
 // * ===============================================================
 
-@import "normalize.less";
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
 
 // * ===============================================================
-// * 3. mixins
+// * 3. show/hide
 // * ===============================================================
 
-@import "mixins/lesshat.less";
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
 
 // * ===============================================================
-// * 4. utilities
+// * 4. relative
 // * ===============================================================
 
-@import "utilities/utilities.less";
-@import "utilities/animations.less";
+.relative {
+  position: relative;
+}
 
 // * ===============================================================
-// * 5. elements
+// * 5. inline-block
 // * ===============================================================
 
-@import "elements/type.less";
-@import "elements/well.less";
-
-// * ===============================================================
-// * 6. partials
-// * ===============================================================
-
-@import "partials/navigation.less";
-@import "partials/footer.less";
+.inline-block {
+  display: inline-block;
+}

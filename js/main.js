@@ -15,7 +15,7 @@
 
     initializeListeners : function () {
       var c = App.cache;
-      App.createAnimationOnHover.call(c.$snowflakeLink, "slideIn", c.$snowflakeText, true);
+      App.createAnimationOnHover.call(c.$snowflakeLink, "slide-in", c.$snowflakeText, true);
       c.$wobbleLinks.each(function(index){
         App.createAnimationOnHover.call(this, "wobble");
       });

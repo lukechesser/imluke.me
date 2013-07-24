@@ -1,4 +1,18 @@
-.animated{
+// * ===============================================================
+// * Animations
+// * Keyframed animations used throughout the site
+// * 
+// * 1. General animation class
+// * 2. Wobble
+// * 3. Slide-in
+// *
+// * ===============================================================
+
+// * ===============================================================
+// * 1. General class: regular speed animation class
+// * ===============================================================
+
+.animated {
   -webkit-animation-fill-mode:both;
   -moz-animation-fill-mode:both;
   -ms-animation-fill-mode:both;
@@ -10,6 +24,10 @@
   -o-animation-duration:.75s;
   animation-duration:.75s;
 }
+
+// * ===============================================================
+// * 2. Wobble: rotation animation used for head icons
+// * ===============================================================
 
 @-webkit-keyframes wobble {
   0% { -webkit-transform: rotate(0deg); }
@@ -58,14 +76,33 @@
 	animation-name: wobble;
 }
 
-@-webkit-keyframes slideIn {
+// * ===============================================================
+// * 3. slideIn
+// * ===============================================================
+
+@-webkit-keyframes slide-in {
   0% { opacity: 0; -webkit-transform: translateX(-40%);}
   100% { opacity: 1; -webkit-transform: translateX(0%); }
 }
 
-.slideIn {
-	-webkit-animation-name: slideIn;
-	-moz-animation-name: slideIn;
-	-o-animation-name: slideIn;
-	animation-name: slideIn;
+@-moz-keyframes slide-in {
+  0% { opacity: 0; -moz-transform: translateX(-40%); }
+  100% { opacity: 1; -moz-transform: translateX(0%); }
+}
+
+@-o-keyframes slide-in {
+  0% { opacity: 0; -o-transform: translateX(-40%); }
+  100% { opacity: 1; -o-transform: translateX(0%); } 
+}
+
+@keyframes slide-in {
+  0% { opacity: 0; transform: translateX(-40%); }
+  100% { opacity: 1; transform: translateX(0%); }
+}
+
+.slide-in {
+	-webkit-animation-name: slide-in;
+	-moz-animation-name: slide-in;
+	-o-animation-name: slide-in;
+	animation-name: slide-in;
 }
