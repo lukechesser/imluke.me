@@ -3,8 +3,8 @@
 
 <html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{Title}{block:PostSummary} | {PostSummary}{/block:PostSummary}</title>
   <meta name="description" content="{MetaDescription}"/>
   <meta name="viewport" content="width=device-width">
   <meta name="google-site-verification" content="IBIyX0xqfYtlJdUHBMfEKY_RLOoWihzrWHBaN_SHcfo" />
@@ -12,10 +12,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   {block:PermalinkPage}
-  {block:Posts}
-  {block:HasTags}<meta name="keywords" content="{block:Tags}{Tag} {/block:Tags}">{/block:HasTags}
-  {/block:Posts}
+    {block:Posts}
+      {block:HasTags}<meta name="keywords" content="{block:Tags}{Tag} {/block:Tags}">{/block:HasTags}
+    {/block:Posts}
   {/block:PermalinkPage}
+
   <meta name="viewport" content="width=device-width">
   <meta name="google-site-verification" content="IBIyX0xqfYtlJdUHBMfEKY_RLOoWihzrWHBaN_SHcfo" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,12 +53,11 @@
 
 <body>
 
-<header class="bar" role="banner">
+<header class="bar header-visible js-fixed-header" role="banner">
   <div class="container clearfix">
     <nav class="pull-left snowflake-container" role="navgiation">
       <a href="/" style="width: 120px; height: 30px; display: block;" title="Return home">
         <img src="http://static.tumblr.com/kqxmsd2/kjjmkum5s/snowflake.svg" class="brand" alt="Home Icon">
-        <h1 style="display: none;">imluke</h1>
       </a>
     </nav>
     <nav class="pull-right social-links" role="navigation">

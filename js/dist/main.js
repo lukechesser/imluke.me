@@ -80,29 +80,76 @@
   };
 })( jQuery );
 ;(function($){
-  var App;
+  
+  var App, // namespace to house interactions
+    c; // alias for cache
   
   App = {
     cache: {
-      $snowflakeLink: $('.brand').parent(),
-      $snowflakeText: $('.brand').next('h1'),
+      $homeLink: $('.js-home'),
       $wobbleLinks: $('.js-wobble'),
-      $videos: $('.video')
+      $videos: $('.video'),
+      $header: $('.js-fixed-header')
+    },
+
+    properties: {
+      headerIsVisible: true,
+      scrollDownPadding: 30, // in px
+      scrollUpPadding: 5, // in px
+      lastPosition: window.scrollY
     },
 
     ready : function () {
+      c = App.cache;
+
       this.initializeListeners();
+      this.initializeResponsiveVideos();
     },
 
     initializeListeners : function () {
-      var c = App.cache;
-      App.createAnimationOnHover.call(c.$snowflakeLink, "slide-in", c.$snowflakeText, true);
       c.$wobbleLinks.each(function(index){
         App.createAnimationOnHover.call(this, "wobble");
       });
-      $(c.$videos).each(function () {
+
+      this.initializeScroller();
+    },
+
+    initializeResponsiveVideos: function () {
+      c.$videos.each(function () {
         $(this).fitVids();
       });
+    },
+
+    initializeScroller: function () {
+      var temporaryScrollUpPadding = App.properties.scrollUpPadding;
+      var temporaryScrollDownPadding = App.properties.scrollDownPadding;
+
+      $(window).on('scroll', function (event) {
+        if (App.properties.headerIsVisible && window.scrollY > App.properties.lastPosition) {
+          temporaryScrollDownPadding--;
+          if (temporaryScrollDownPadding < 1) {
+            App.hideHeader();
+            temporaryScrollDownPadding = App.properties.scrollDownPadding;
+          }
+        } else if (!App.properties.headerIsVisible && window.scrollY < App.properties.lastPosition) {
+          temporaryScrollUpPadding--;
+          if (temporaryScrollUpPadding < 1) {
+            App.showHeader();
+            temporaryScrollUpPadding = App.properties.scrollUpPadding;
+          }
+        }
+        App.properties.lastPosition = window.scrollY;
+      });
+    },
+
+    showHeader: function () {
+      c.$header.addClass('header-visible');
+      App.properties.headerIsVisible = true;
+    },
+
+    hideHeader: function () {
+      c.$header.removeClass('header-visible');
+      App.properties.headerIsVisible = false;
     },
 
     createAnimationOnHover : function (animationClass, $objectToAnimate, objectIsHidden) {
@@ -125,5 +172,6 @@
       });
     }
   };
+
   App.ready();
 })(jQuery);

@@ -32,7 +32,6 @@ module.exports = function(grunt) {
     jshint: {
       files: ['gruntfile.js', 'js/*.js'],
       options: {
-        // options here to override JSHint defaults
         globals: {
           jQuery: true,
           console: true,
@@ -42,7 +41,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['<%= jshint.files %>'],
+      files: ['<%= jshint.files %>', 'less/**/*.less'],
       tasks: ['jshint', 'concat', 'less']
     }
   });
