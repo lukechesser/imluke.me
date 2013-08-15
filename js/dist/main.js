@@ -82,7 +82,9 @@
 ;(function($){
   
   var App, // namespace to house interactions
-    c; // alias for cache
+    c, // alias for cache
+    temporaryScrollUpPadding, // buffer for scrolling up
+    temporaryScrollDownPadding; // buffer for scrolling down
   
   App = {
     cache: {
@@ -111,7 +113,11 @@
         App.createAnimationOnHover.call(this, "wobble");
       });
 
-      this.initializeScroller();
+      if (this.testforTouch()) {
+        this.initializeScroller(true);
+      } else {
+        this.initializeScroller(false);
+      }
     },
 
     initializeResponsiveVideos: function () {
@@ -120,26 +126,32 @@
       });
     },
 
-    initializeScroller: function () {
-      var temporaryScrollUpPadding = App.properties.scrollUpPadding;
-      var temporaryScrollDownPadding = App.properties.scrollDownPadding;
+    initializeScroller: function (isTouchDevice) {
+      temporaryScrollUpPadding = App.properties.scrollUpPadding;
+      temporaryScrollDownPadding = App.properties.scrollDownPadding;
 
-      $(window).on('scroll', function (event) {
-        if (App.properties.headerIsVisible && window.scrollY > App.properties.lastPosition) {
-          temporaryScrollDownPadding--;
-          if (temporaryScrollDownPadding < 1) {
-            App.hideHeader();
-            temporaryScrollDownPadding = App.properties.scrollDownPadding;
-          }
-        } else if (!App.properties.headerIsVisible && window.scrollY < App.properties.lastPosition) {
-          temporaryScrollUpPadding--;
-          if (temporaryScrollUpPadding < 1) {
-            App.showHeader();
-            temporaryScrollUpPadding = App.properties.scrollUpPadding;
-          }
+      if (isTouchDevice) {
+        $(window).on({ 'touchmove': App.checkScrollPosition });
+      } else {
+        $(window).on({ 'scroll': App.checkScrollPosition });
+      }
+    },
+
+    checkScrollPosition: function () {
+      if (App.properties.headerIsVisible && window.scrollY > App.properties.lastPosition) {
+        temporaryScrollDownPadding--;
+        if (temporaryScrollDownPadding < 1) {
+          App.hideHeader();
+          temporaryScrollDownPadding = App.properties.scrollDownPadding;
         }
-        App.properties.lastPosition = window.scrollY;
-      });
+      } else if (!App.properties.headerIsVisible && window.scrollY < App.properties.lastPosition) {
+        temporaryScrollUpPadding--;
+        if (temporaryScrollUpPadding < 1) {
+          App.showHeader();
+          temporaryScrollUpPadding = App.properties.scrollUpPadding;
+        }
+      }
+      App.properties.lastPosition = window.scrollY;
     },
 
     showHeader: function () {
@@ -170,6 +182,14 @@
           $objectToAnimate.fadeOut();
         }
       });
+    },
+
+    testforTouch: function () {
+      if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+        return true;
+      } else {
+        return false;
+      }
     }
   };
 
