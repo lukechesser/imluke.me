@@ -1,0 +1,9 @@
+{
+  "name": "MagicHeader.js",
+  "version": "0.0.0",
+  "commit": "6b755de4adb6911141dc971e327378e16f5eae73",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lukechesser/MagicHeader.js.git"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "MagicHeader",
+  "title": "Magicheader",
+  "description": "A jQuery plugin that makes fixed header's smarter, like Teehan+Lax or MailChimp.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/lukechesser/MagicHeader.js",
+  "author": {
+    "name": "Luke Chesser",
+    "email": "luke.chesser@me.com",
+    "url": "http://imluke.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lukechesser/MagicHeader.js.git"
+  },
+  "bugs": "https://github.com/lukechesser/MagicHeader.js/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/lukechesser/MagicHeader.js/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "1.6.0"
+  },
+  "keywords": []
+}
