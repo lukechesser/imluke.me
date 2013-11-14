@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     less: {
       options: {
-        yuicompress: true
+        yuicompress: false
       },
       files: {
         src: "less/v7.less", dest: "css/v7.css"
