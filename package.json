@@ -1,0 +1,19 @@
+{
+  "name": "imluke.me",
+  "version": "9.0.0",
+  "description": "Static personal site (imluke.me)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukechesser/imluke.me.git"
+  },
+  "author": "Luke Chesser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukechesser/imluke.me/issues"
+  },
+  "homepage": "https://github.com/lukechesser/imluke.me#readme"
+}
