@@ -1,6 +1,0 @@
-"Every college provides access to a huge collection of potential readings, and to a tiny collection..."
-Published: May 19, 2013 at 12:12AM
-----------------------------
-“Every college provides access to a huge collection of potential readings, and to a tiny collection of potential lectures. We ask students to read the best works we can find, whoever produced them and where, but we only ask them to listen to the best lecture a local employee can produce that morning. Sometimes you’re at a place where the best lecture your professor can give is the best in the world. But mostly not. And the only thing that kept this system from seeming strange was that we’ve never had a good way of publishing lectures.” 
- 
- - <em><a href="http://www.shirky.com/weblog/2012/11/napster-udacity-and-the-academy/" target="_blank">Clay Shirky</a></em> 
