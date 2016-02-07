@@ -1,25 +1,19 @@
 {
   "name": "imluke.me",
-  "version": "7.1.5",
-  "description": "theme and assets for imluke.me",
+  "version": "9.0.0",
+  "description": "Static personal site (imluke.me)",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukechesser/imluke.me.git"
+    "url": "git+https://github.com/lukechesser/imluke.me.git"
   },
   "author": "Luke Chesser",
-  "license": "BSD",
-  "dependencies": {
-    "grunt": "~0.4.1"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukechesser/imluke.me/issues"
   },
-  "devDependencies": {
-    "grunt-contrib-jshint": "~0.5.2",
-    "grunt-contrib-less": "~0.5.1",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-watch": "~0.4.3",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-bump": "0.0.2"
-  }
+  "homepage": "https://github.com/lukechesser/imluke.me#readme"
 }
