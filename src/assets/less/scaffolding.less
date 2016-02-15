@@ -1,0 +1,23 @@
+html,
+body {
+  .monospace();
+  .bg-cover();
+
+  height: 100%;
+  background-color: @black;
+  font-size: 18px;
+  color: @white-dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: @gold;
+  border-bottom: 1px solid @gold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: darken(@gold, 10%);
+    border-bottom-color: darken(@gold, 10%);
+  }
+}
