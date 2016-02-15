@@ -29,7 +29,8 @@ module.exports = {
     new ExtractTextPlugin("../css/[name].css"),
     new CopyPlugin([
       { from: "src/html", to: "../" },
-      { from: "src/assets/img", to: "../img" }
+      { from: "src/assets/img", to: "../img" },
+      { from: "src/public", to: "../" }
       // Any other files you'd like to copy from src to dist can be specified
       // here. :)
     ])

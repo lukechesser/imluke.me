@@ -5,8 +5,8 @@
   "main": "dev-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle:dev": "webpack --config=webpack.config.development.js",
-    "bundle:prod": "webpack --config=webpack.config.production.js",
+    "bundle:dev": "webpack --config webpack.config.development.js",
+    "bundle:prod": "webpack --config webpack.config.production.js",
     "bundle:watch": "npm run bundle:dev -- --watch",
     "clear": "rm -rf dist",
     "dev": "npm run clear && parallelshell 'npm run bundle:watch' 'npm start'",
