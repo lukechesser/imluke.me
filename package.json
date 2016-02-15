@@ -5,14 +5,16 @@
   "main": "dev-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev": "webpack --config=webpack.config.development.js",
-    "build:prod": "webpack --config webpack.config.production.js",
-    "build:watch": "npm run build:dev -- --watch",
+    "bundle:dev": "webpack --config=webpack.config.development.js",
+    "bundle:prod": "webpack --config=webpack.config.production.js",
+    "bundle:watch": "npm run bundle:dev -- --watch",
     "clear": "rm -rf dist",
-    "dev": "npm run clear && parallelshell 'npm run build:watch' 'npm start'",
+    "dev": "npm run clear && parallelshell 'npm run bundle:watch' 'npm start'",
     "start": "nodemon dev-server",
-    "postinstall": "npm run build:dev",
-    "cp:cname": "cp CNAME dist/CNAME"
+    "postinstall": "npm run bundle:dev",
+    "cp:cname": "cp CNAME dist/CNAME",
+    "build:dev": "npm run clear && npm run bundle:dev",
+    "build:prod": "npm run clear && npm run bundle:prod"
   },
   "repository": {
     "type": "git",
