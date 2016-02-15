@@ -1,7 +1,13 @@
 # imluke.me
 
-Personal site.
+Personal site at https://imluke.me/.
+
+## Install
+
+```
+npm i
+```
 
 ----
 
-Built using imluke.me.
+Built using Statik.
