@@ -1,0 +1,36 @@
+.credit {
+  .sans-serif();
+
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+
+  @media (max-width: (@screen-sm-min - 1)) {
+    top: 20px;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    bottom: 20px;
+  }
+}
+
+.credit a {
+  color: @white;
+  padding: 20px 20px;
+  border-bottom: none;
+  opacity: 0.7;
+
+  &:hover {
+    color: @white;
+    border-bottom: none;
+    opacity: 1;
+  }
+}
+
+.credit svg {
+  height: 12px;
+  width: 15px;
+  vertical-align: -1px;
+}

@@ -1,0 +1,25 @@
+/*
+Vertical Center Wrapper
+=======================
+
+Wrapper for creating vertically centered `div`s.
+
+Example:
+
+<div class="vertical-center">
+  <div class="vertical-center__cell">
+    <p>Content</p>
+  </div> <!-- close .vertical-center__cell -->
+</div> <!-- close .vertical-center -->
+*/
+
+.vertical-center {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.vertical-center__cell {
+  display: table-cell;
+  vertical-align: middle;
+}
